@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width,initial-scale=1" name="viewport" />
+  <title>WST 156 | Web Media Production</title>
+  <meta content="Eight-class interactive web media production course" name="description" />
+  <link href="style.css" rel="stylesheet" />
+  <script defer="" src="labs.js"></script>
+  <script defer="" src="course.js"></script>
+</head>
+
+<body><a class="skip" href="#main">Skip to content</a>
+  <header class="topbar"><a class="wordmark" href="#home"><span>WMP</span> / 156</a><span class="top-title">WEB MEDIA
+      PRODUCTION</span><button aria-controls="sidebar" aria-expanded="false" id="menu">Menu</button><button
+      aria-label="Toggle light or dark theme" id="theme">Theme</button></header>
+  <aside id="sidebar">
+    <nav aria-label="Course navigation"><a class="nav-home" data-nav="home" href="#home">Course home</a>
+      <div class="nav-week">WEEK 1 / Image fundamentals</div><a data-nav="class-1"
+        href="#class-1"><span>01</span>Digital media &amp; image formats<span class="nav-check"
+          data-check="1"></span></a><a data-nav="class-2" href="#class-2"><span>02</span>Resolution, color &amp;
+        optimization<span class="nav-check" data-check="2"></span></a>
+      <div class="nav-week">WEEK 2 / Design &amp; advertising</div><a data-nav="class-3"
+        href="#class-3"><span>03</span>Advertising design &amp; aspect ratios<span class="nav-check"
+          data-check="3"></span></a><a data-nav="class-4" href="#class-4"><span>04</span>Production workflows &amp;
+        generative images<span class="nav-check" data-check="4"></span></a>
+      <div class="nav-week">WEEK 3 / AI video &amp; media technology</div><a data-nav="class-5"
+        href="#class-5"><span>05</span>Generative video &amp; shot design<span class="nav-check"
+          data-check="5"></span></a><a data-nav="class-6" href="#class-6"><span>06</span>Video codecs, audio &amp;
+        HDR<span class="nav-check" data-check="6"></span></a>
+      <div class="nav-week">WEEK 4 / Editing &amp; publishing</div><a data-nav="class-7"
+        href="#class-7"><span>07</span>Premiere Pro &amp; short-form storytelling<span class="nav-check"
+          data-check="7"></span></a><a data-nav="class-8" href="#class-8"><span>08</span>Media delivery &amp; final
+        review<span class="nav-check" data-check="8"></span></a>
+      <div class="nav-week">COURSE RESOURCES</div><a data-nav="assignments" href="#assignments">Assignments</a><a
+        data-nav="resources" href="#resources">Downloads &amp; glossary</a>
+    </nav>
+    <div class="sidebar-foot">WST 156 · Media Lab<br />Learn / Explore / Create</div>
+  </aside>
+  <main id="main">
+    <section class="view" data-view="" id="home">
+      <div class="hero">
+        <div class="eyebrow">WST 156 / FOUR-WEEK COURSE</div>
+        <h1>Make media.<br />Make it work.</h1>
+        <p class="lead">A practical guide to producing, optimizing and publishing digital images, advertising and video
+          for the web.</p>
+        <div class="hero-stats"><span><b>8</b> classes</span><span><b>24</b> hours</span><span><b>4</b> projects</span>
+        </div><a class="primary" href="#class-1">Start Class 1 →</a>
+      </div>
+      <h2>Course roadmap</h2>
+      <p>Each three-hour class combines technical notes, interactive experiments, instructor demonstrations and studio
+        time. No new graded assignment on every class day.</p>
+      <div class="course-grid"><a class="week-card" href="#class-1"><small>WEEK 01</small>
+          <h3>Image fundamentals</h3>
+          <p>Digital media &amp; image formats<br />Resolution, color &amp; optimization</p><span>Open week →</span>
+        </a><a class="week-card" href="#class-3"><small>WEEK 02</small>
+          <h3>Design &amp; advertising</h3>
+          <p>Advertising design &amp; aspect ratios<br />Production workflows &amp; generative images</p><span>Open week
+            →</span>
+        </a><a class="week-card" href="#class-5"><small>WEEK 03</small>
+          <h3>AI video &amp; media technology</h3>
+          <p>Generative video &amp; shot design<br />Video codecs, audio &amp; HDR</p><span>Open week →</span>
+        </a><a class="week-card" href="#class-7"><small>WEEK 04</small>
+          <h3>Editing &amp; publishing</h3>
+          <p>Premiere Pro &amp; short-form storytelling<br />Media delivery &amp; final review</p><span>Open week
+            →</span>
+        </a></div>
+      <h2>Four graded projects</h2>
+      <div class="project-grid"><a href="#assignment-1"><small>PROJECT 01</small><b>Meme &amp; image
+            formats</b><span>View brief →</span></a><a href="#assignment-2"><small>PROJECT 02</small><b>Static ad
+            campaign</b><span>View brief →</span></a><a href="#assignment-3"><small>PROJECT 03</small><b>AI-assisted
+            micro commercial</b><span>View brief →</span></a><a href="#assignment-4"><small>PROJECT
+            04</small><b>One-minute reel</b><span>View brief →</span></a></div>
+      <div class="note"><b>Getting started:</b> Bring an image editor (Photoshop or Illustrator) and Premiere Pro.
+        Browser experiments run locally without accounts. AI services are optional and have equal-credit alternatives.
+        No student needs a PS5.</div>
+      <p aria-live="polite" id="progress-summary"></p>
+    </section>
+    <section class="view lesson" data-view="" id="class-1">
+      <header class="lesson-head">
+        <div class="eyebrow">WEEK 1 / CLASS 01 / 180 MIN</div>
+        <h1>Digital media &amp; image formats</h1>
+        <p class="lead">From a pixel to a finished web graphic. Learn how media is represented, then test what happens
+          when you export the same design in different formats.</p>
+        <div class="actions"><button class="print">Print lesson</button><button class="complete" data-day="1">Mark class
+            complete</button></div>
+      </header>
+      <div class="overview">
+        <h2>Today’s plan</h2>
+        <div class="agenda">
+          <div><b>00–10</b><span>Warm-up / recap</span></div>
+          <div><b>10–50</b><span>Media, pixels and vectors</span></div>
+          <div><b>50–85</b><span>Image formats + compression experiment</span></div>
+          <div><b>85–95</b><span>Break</span></div>
+          <div><b>95–120</b><span>Guided production demo</span></div>
+          <div><b>120–175</b><span>Start Assignment 1: meme</span></div>
+          <div><b>175–180</b><span>Save &amp; exit reflection</span></div>
+        </div>
+        <h3>Learning objectives</h3>
+        <ul>
+          <li>Distinguish analog and digital media, raster and vector.</li>
+          <li>Choose a suitable file format based on content and delivery.</li>
+          <li>Compare lossy and lossless exports using actual measurements.</li>
+        </ul>
+      </div>
+      <div class="section-label">PART 01 / LECTURE &amp; DEMONSTRATIONS</div>
+      <div class="topic" id="intro">
+        <h2>What is digital media?</h2>
+        <p>A medium is a means of expression or communication. Paint, paper and air carrying sound are examples of
+          physical media. Digital media represents information as discrete values that computers can store, process and
+          transmit, usually as binary data. It does not have to be encrypted or displayed on a screen.</p>
+        <div class="tiles">
+          <article>
+            <h3>Capture</h3>Camera samples light; microphone samples sound.
+          </article>
+          <article>
+            <h3>Process</h3>Edit, encode, resize or compress the data.
+          </article>
+          <article>
+            <h3>Deliver</h3>Store files or transmit them to a browser.
+          </article>
+        </div>
+        <div class="exercise"><b>Discuss · 5 min</b>
+          <p>Follow a smartphone photo from capture to a social media post. Where might its dimensions, metadata or
+            compression change?</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>From analog to digital</h2>
+        <p>A printed photo reflects light continuously across its surface; a digital photo stores numerical samples in a
+          grid. A bit is one binary digit (0 or 1); eight bits form a byte. Text, sound and images all use binary
+          representations, but their file structures differ.</p>
+        <p>Example: a camera samples light, converts sensor readings to numbers and encodes the result as RAW or a
+          processed image. Encryption is optional and unrelated to whether media is digital.</p>
+        <div class="tiles">
+          <article><b>Capture</b>
+            <p>Sensor or input creates samples.</p>
+          </article>
+          <article><b>Represent</b>
+            <p>Pixels, paths, samples or frames.</p>
+          </article>
+          <article><b>Deliver</b>
+            <p>Encoded file or stream for a specific audience.</p>
+          </article>
+        </div>
+      </div>
+      <div class="topic" id="raster">
+        <h2>Raster versus vector</h2>
+        <p>Raster images store a grid of pixels. Vector artwork describes shapes with paths, coordinates and fills.
+          Vector shapes can be rendered at different sizes without enlarging a fixed pixel grid; embedded raster images
+          do not gain this advantage.</p>
+        <div class="lab">
+          <h3>Zoom experiment</h3><label>Magnification <input id="zoom" max="8" min="1" type="range" value="4" /><output
+              id="zoomOut"></output></label>
+          <div class="compare">
+            <figure>
+              <div class="viewport"><canvas aria-label="Low resolution raster circle" height="32" id="pixel"
+                  width="32"></canvas></div>
+              <figcaption>32 × 32 raster</figcaption>
+            </figure>
+            <figure>
+              <div class="viewport"><svg aria-label="Vector circle" id="vector" role="img" viewbox="0 0 32 32">
+                  <circle cx="16" cy="16" fill="#087f8c" r="12"></circle>
+                  <path d="M10 16l4 4 8-9" fill="none" stroke="white" stroke-width="2"></path>
+                </svg></div>
+              <figcaption>SVG paths</figcaption>
+            </figure>
+          </div>
+          <p>Increase zoom. Which edge stays smooth? Both ultimately appear on a pixel-based screen.</p>
+        </div>
+        <p><b>SVG</b> is an XML-based web format ideal for logos, icons and diagrams. Inline SVG can be styled or
+          scripted. <b>EPS</b> is a legacy print/exchange format, not a native browser image; it may contain raster
+          content.</p>
+        <div class="exercise"><b>Mini task · 10 min</b>
+          <p>Create a simple logo in Illustrator. Export SVG and a 64-pixel PNG. Place both at 256 pixels wide and
+            compare edges and file sizes.</p>
+        </div>
+      </div>
+      <div class="topic" id="formats">
+        <h2>Choose the right image format</h2>
+        <p>Lossless compression reconstructs the encoded pixel data exactly. Lossy compression discards information to
+          reduce size. Reducing a photo to a GIF palette can lose colors even though GIF's subsequent compression is
+          lossless. File size depends on content, dimensions and encoder settings.</p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Format</th>
+                <th>Compression / features</th>
+                <th>Use</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>JPEG / .jpg</td>
+                <td>Usually lossy; typical 8 bits/channel; no alpha</td>
+                <td>Photographs, compatibility</td>
+              </tr>
+              <tr>
+                <td>PNG / .png</td>
+                <td>Lossless; full alpha supported; indexed or truecolor</td>
+                <td>UI, screenshots, transparent graphics</td>
+              </tr>
+              <tr>
+                <td>GIF / .gif</td>
+                <td>Lossless indexed data; up to 256 colors per frame palette; binary transparency</td>
+                <td>Simple legacy animations</td>
+              </tr>
+              <tr>
+                <td>WebP / .webp</td>
+                <td>Lossy or lossless; alpha and animation</td>
+                <td>General web delivery</td>
+              </tr>
+              <tr>
+                <td>AVIF / .avif</td>
+                <td>Lossy or lossless coding; alpha, high bit depth, HDR and sequences</td>
+                <td>Efficient modern web delivery; test tools and playback</td>
+              </tr>
+              <tr>
+                <td>SVG / .svg</td>
+                <td>Vector document, may embed raster</td>
+                <td>Logos and diagrams</td>
+              </tr>
+              <tr>
+                <td>TIFF / .tif</td>
+                <td>Many bit depths; uncompressed, lossless or lossy options</td>
+                <td>Print, scanning, archival workflows</td>
+              </tr>
+              <tr>
+                <td>HEIF / HEIC</td>
+                <td>Image container; HEIC commonly uses HEVC</td>
+                <td>Phone capture; convert for web as needed</td>
+              </tr>
+              <tr>
+                <td>JPEG XL / .jxl</td>
+                <td>Lossy or lossless; advanced color features</td>
+                <td>Emerging delivery option; verify browser support</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Camera RAW (e.g. CR3, NEF, ARW, DNG) typically stores sensor-derived data, often 12 or 14 bits per sample,
+          not necessarily 16-bit RGB per channel. Develop it in a RAW editor before ordinary web export. PDF is a
+          document format containing text, vector and raster content; rich features depend on the viewer. Keep editable
+          PSD/AI masters separately from delivery files.</p>
+        <div class="lab">
+          <h3>Real compression lab</h3>
+          <p>Use the built-in test illustration or your own image. The browser actually encodes the canvas; sizes below
+            are measured, not estimates. Input is flattened onto white and limited to 1200 pixels on its longest side.
+          </p><label>Choose local image <input accept="image/*" id="upload" type="file" /></label>
+          <div class="controls"><label>Format <select id="format">
+                <option value="image/jpeg">JPEG</option>
+                <option value="image/webp">WebP</option>
+                <option value="image/png">PNG</option>
+              </select></label><label>Quality <input id="quality" max="100" min="5" type="range" value="50" /><output
+                id="qualityOut"></output></label></div>
+          <div class="compare">
+            <figure><canvas height="360" id="source" width="640"></canvas>
+              <figcaption>Source pixels</figcaption>
+            </figure>
+            <figure><img alt="Actual encoded result" id="encoded" />
+              <figcaption aria-live="polite" id="encodedInfo"></figcaption>
+            </figure>
+          </div><a download="sample.jpg" id="save">Download encoded image</a>
+          <p class="muted">Quality scales are encoder-specific and do not apply to PNG. Canvas export may not preserve
+            original metadata or color depth. AVIF export is not assumed to be available through canvas.</p>
+        </div>
+        <div class="exercise"><b>Mini project · 20 min</b>
+          <p>Export one photograph and one text-heavy graphic as JPEG, PNG, WebP and, using <a
+              href="https://squoosh.app/">Squoosh</a>, AVIF. Record dimensions, settings and bytes. Inspect edges and
+            gradients at 100%. Choose the smallest acceptable file for each subject and explain your choice.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Real format samples</h2>
+        <p>These original practice graphics are stored in actual image files. Open or download each and compare the
+          edges of the text, the gradient and the file sizes.</p>
+        <div class="samples" id="image-samples"></div>
+        <p>AVIF and JPEG XL are additional formats to recognize. HEIC is a common capture format using HEIF; JPEG XL and
+          HEIC should not be assumed to work everywhere on the web. Check browser support and provide fallbacks.</p>
+      </div>
+      <div class="lab quickquiz">
+        <h3>Check your understanding</h3>
+        <fieldset data-answer="1">
+          <legend>1. Which is a scalable logo format?</legend><label><input name="check-0" type="radio" value="0" />
+            JPEG</label><label><input name="check-0" type="radio" value="1" /> SVG</label><label><input name="check-0"
+              type="radio" value="2" /> GIF</label>
+          <p class="explanation" hidden="">SVG describes vector geometry.</p>
+        </fieldset>
+        <fieldset data-answer="0">
+          <legend>2. Which process can discard visual information?</legend><label><input name="check-1" type="radio"
+              value="0" /> Lossy compression</label><label><input name="check-1" type="radio" value="1" /> Lossless
+            compression</label><label><input name="check-1" type="radio" value="2" /> Renaming a file</label>
+          <p class="explanation" hidden="">Lossy encoding trades fidelity for a smaller representation.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>3. Does GIF preserve every color from a full-color photo?</legend><label><input name="check-2"
+              type="radio" value="0" /> Always</label><label><input name="check-2" type="radio" value="1" /> No; palette
+            conversion may lose colors</label><label><input name="check-2" type="radio" value="2" /> Only if renamed
+            PNG</label>
+          <p class="explanation" hidden="">GIF has a maximum of 256 colors per color table.</p>
+        </fieldset><button class="check-quiz">Check answers</button><output aria-live="polite"
+          class="quiz-score"></output>
+      </div>
+      <div class="section-label">PART 02 / PRODUCTION STUDIO</div>
+      <div class="exercise"><strong>Guided demo · 25 min</strong>
+        <p>Create a meme in Photoshop: open an approved photo, crop to a square, add contrasting text, save PSD, then
+          export JPEG and PNG. Compare the exports in the browser lab. Demonstrate GIF palette selection and WebP
+          export.</p>
+      </div>
+      <article class="assignment" id="assignment-1">
+        <div class="eyebrow">GRADED PROJECT 1 / 4</div>
+        <h2>Meme &amp; image format experiment</h2>
+        <p>Create an original meme, then investigate how the same design behaves in four raster formats.</p>
+        <h3>Requirements</h3>
+        <ol>
+          <li>Create a 1080 × 1080 design in Photoshop or an equivalent editor. Use readable text and a photo or
+            illustration you have permission to use.</li>
+          <li>Export the same design at the same pixel dimensions as JPEG, PNG, GIF (single frame) and WebP. Use the
+            browser compression lab or Squoosh if the editor cannot export WebP; GIF can be exported via Photoshop Save
+            for Web (Legacy).</li>
+          <li>Compare the exports at 100% and enlarged. Record actual bytes, pixel dimensions, export settings, visible
+            artifacts and transparency support.</li>
+          <li>Identify the best format for your meme and explain why. Do not assume smallest is always best.</li>
+        </ol>
+        <h3>Submit</h3>
+        <p>Editable source, four exports, a comparison table and a short conclusion.</p>
+        <h3>Suggested rubric · 100 points</h3>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Criterion</th>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Design and readability</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Four correct exports</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Measured comparison</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Reasoned format choice and asset credits</td>
+                <td>15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Submit through the course submission system. Your instructor will specify due dates. Keep
+          original editable files and credit your source assets.</p>
+      </article>
+      <div class="exercise"><strong>Studio · 55 min</strong>
+        <p>Choose a subject, create your first meme and make at least two exports. Finish the comparison in Class 2. Use
+          <a download="" href="assets/meme-base.png">the supplied original graphic</a> if you need a starting image.</p>
+      </div>
+      <div class="exit">
+        <h3>Before leaving</h3>
+        <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
+      </div>
+      <div class="next"><a href="#home">Course home</a><a href="#class-2">Next class →</a></div>
+    </section>
+    <section class="view lesson" data-view="" id="class-2">
+      <header class="lesson-head">
+        <div class="eyebrow">WEEK 1 / CLASS 02 / 180 MIN</div>
+        <h1>Resolution, color &amp; image optimization</h1>
+        <p class="lead">Understand what makes an image sharp, how color is represented, and how to prepare assets for
+          screens.</p>
+        <div class="actions"><button class="print">Print lesson</button><button class="complete" data-day="2">Mark class
+            complete</button></div>
+      </header>
+      <div class="overview">
+        <h2>Today’s plan</h2>
+        <div class="agenda">
+          <div><b>00–10</b><span>Warm-up / recap</span></div>
+          <div><b>10–50</b><span>Resolution and resampling</span></div>
+          <div><b>50–85</b><span>RGB, bit depth and transparency</span></div>
+          <div><b>85–95</b><span>Break</span></div>
+          <div><b>95–120</b><span>Guided production demo</span></div>
+          <div><b>120–175</b><span>Finish Assignment 1</span></div>
+          <div><b>175–180</b><span>Save &amp; exit reflection</span></div>
+        </div>
+        <h3>Learning objectives</h3>
+        <ul>
+          <li>Explain pixels, PPI, DPI and resampling.</li>
+          <li>Distinguish color model, color space, gamut and bit depth.</li>
+          <li>Compare transparency and responsive image choices.</li>
+        </ul>
+      </div>
+      <div class="section-label">PART 01 / LECTURE &amp; DEMONSTRATIONS</div>
+      <div class="topic" id="resolution">
+        <h2>Resolution is not just PPI</h2>
+        <p>Pixel dimensions describe how many samples a raster contains. PPI describes pixel density at a physical size
+          (especially print); DPI describes printer dots. A 1920 × 1080 image has 2,073,600 pixels regardless of its PPI
+          metadata. At 300 PPI it prints at 6.4 × 3.6 inches without resampling; at 72 PPI it prints larger. Resampling
+          changes the pixel grid. Web layout uses CSS pixels and device pixel ratio, not a universal 72 PPI rule.</p>
+        <div class="lab">
+          <h3>Pixel &amp; print calculator</h3>
+          <div class="controls"><label>Width (px)<input id="w" max="20000" min="1" type="number"
+                value="1920" /></label><label>Height (px)<input id="h" max="20000" min="1" type="number"
+                value="1080" /></label><label>Print PPI<input id="ppi" max="2400" min="1" type="number"
+                value="300" /></label><label>Bits/pixel<select id="bpp">
+                <option>8</option>
+                <option selected="">24</option>
+                <option>32</option>
+                <option>48</option>
+              </select></label></div>
+          <div aria-live="polite" class="result" id="resolutionResult"></div>
+          <p>Raw size = width × height × bits per pixel ÷ 8. This excludes file headers, padding and compression.</p>
+        </div>
+        <div class="exercise"><b>Photoshop experiment · 10 min</b>
+          <p>Open Image Size. Disable Resample and change 72 to 300 PPI. Record pixel dimensions and print size. Enable
+            Resample and repeat with a fixed print size. Explain why the web cares about pixel dimensions.</p>
+        </div>
+      </div>
+      <div class="topic" id="color">
+        <h2>Color, channels and bit depth</h2>
+        <p>RGB mixes light additively; CMYK inks subtract portions of reflected light. Real ink and paper require device
+          profiles; simple equations are only approximations. A color model describes components; a color space defines
+          their meaning and gamut. sRGB is a dependable web default, while Display P3 and Adobe RGB cover different,
+          larger regions. Gamut and bit depth are separate: 8-bit RGB offers about 16.7 million combinations, not a
+          guarantee of any gamut coverage. HDR involves luminance range and transfer functions, not just more bits.</p>
+        <div class="lab">
+          <h3>RGB mixer</h3>
+          <div class="controls"><label>Red <input id="r" max="255" type="range" value="30" /></label><label>Green <input
+                id="g" max="255" type="range" value="150" /></label><label>Blue <input id="b" max="255" type="range"
+                value="210" /></label></div>
+          <div class="swatch" id="swatch"></div><output id="rgbOut"></output>
+          <p>Try all zero, all 255, and red plus green.</p>
+        </div>
+        <div class="lab">
+          <h3>Bit depth and banding</h3><label>Grayscale bits per sample <select id="depth">
+              <option>1</option>
+              <option>2</option>
+              <option selected="">4</option>
+              <option>8</option>
+            </select></label><canvas aria-label="Quantized grayscale ramp" height="90" id="gradient"
+            width="768"></canvas><output id="depthOut"></output>
+          <p>For RGB, 8 bits per channel × 3 channels = 24 bits per pixel. Adding an 8-bit alpha channel gives 32 bits
+            per pixel. Higher bit depth can reduce banding during edits.</p>
+        </div>
+        <div class="lab">
+          <h3>Alpha transparency</h3><label>Opacity <input id="alpha" max="100" min="0" type="range"
+              value="50" /></label>
+          <div class="checker">
+            <div id="alphaShape">Alpha</div>
+          </div><output id="alphaOut"></output>
+        </div>
+        <div class="exercise"><b>Practice · 10 min</b>
+          <p>Export a logo with a soft shadow as PNG and JPEG. Place them on dark and light backgrounds. Explain why a
+            white background is not transparency.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Color management in production</h2>
+        <p>RGB and CMYK are models. sRGB, Display P3 and Adobe RGB describe different color spaces. A profile helps
+          software interpret the stored numbers. Assigning a profile changes their interpretation; converting profiles
+          changes the numbers to preserve appearance where possible. Export with the intended profile, usually sRGB for
+          general web delivery. CMYK printing depends on ink, paper and printer profiles.</p>
+        <p>At 8 bits per channel, RGB has 256³ = 16,777,216 possible code combinations. That does not prove a screen can
+          display all of them accurately. A wide gamut is not the same as high bit depth or HDR.</p>
+      </div>
+      <div class="topic">
+        <h2>Responsive images</h2>
+        <p>A 600 CSS-pixel wide image on a device with a pixel ratio of 2 may benefit from a 1200-pixel source. Sending
+          a huge image to every device wastes bandwidth. Use multiple source widths with srcset and sizes; reserve space
+          with width and height. Use alternative text for informative images and empty alt text for decorative ones.</p>
+        <div class="lab">
+          <h3>Device pixel ratio calculator</h3><label>Displayed width (CSS px) <input id="css-width" min="1"
+              type="number" value="600" /></label><label>Device pixel ratio <select id="dpr">
+              <option>1</option>
+              <option selected="">2</option>
+              <option>3</option>
+            </select></label><output id="dpr-out"></output>
+        </div>
+      </div>
+      <div class="lab quickquiz">
+        <h3>Check your understanding</h3>
+        <fieldset data-answer="1">
+          <legend>1. A 1200 × 800 image changes PPI without resampling. What changes?</legend><label><input
+              name="check-3" type="radio" value="0" /> Pixel count</label><label><input name="check-3" type="radio"
+              value="1" /> Print dimensions</label><label><input name="check-3" type="radio" value="2" /> RGB
+            channels</label>
+          <p class="explanation" hidden="">PPI describes the physical print mapping, not a new pixel grid.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>2. How many bits per pixel for RGB with 8 bits per channel?</legend><label><input name="check-4"
+              type="radio" value="0" /> 8</label><label><input name="check-4" type="radio" value="1" />
+            24</label><label><input name="check-4" type="radio" value="2" /> 32</label>
+          <p class="explanation" hidden="">Three channels × eight bits.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>3. Which supports partial alpha transparency?</legend><label><input name="check-5" type="radio"
+              value="0" /> Ordinary JPEG</label><label><input name="check-5" type="radio" value="1" />
+            PNG</label><label><input name="check-5" type="radio" value="2" /> GIF</label>
+          <p class="explanation" hidden="">PNG can store varying alpha values; GIF transparency is binary.</p>
+        </fieldset><button class="check-quiz">Check answers</button><output aria-live="polite"
+          class="quiz-score"></output>
+      </div>
+      <div class="section-label">PART 02 / PRODUCTION STUDIO</div>
+      <div class="exercise"><strong>Guided demo · 25 min</strong>
+        <p>Open the same image twice. With Resample off, change 72 PPI to 300 PPI and inspect pixel dimensions. Then
+          enable Resample and hold physical print size fixed. Compare both exports. Place a transparent PNG and a
+          white-background JPEG over a colored layer.</p>
+      </div>
+      <div class="exercise"><strong>Studio · 55 min</strong>
+        <p>Complete <a href="#assignment-1">Assignment 1</a>. Compare the four exports, fill in the <a download=""
+            href="assets/image-comparison.csv">comparison worksheet</a>, and write your conclusion. Pair up and review
+          the legibility and file-size tradeoffs.</p>
+      </div>
+      <div class="exit">
+        <h3>Before leaving</h3>
+        <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
+      </div>
+      <div class="next"><a href="#home">Course home</a><a href="#class-3">Next class →</a></div>
+    </section>
+    <section class="view lesson" data-view="" id="class-3">
+      <header class="lesson-head">
+        <div class="eyebrow">WEEK 2 / CLASS 03 / 180 MIN</div>
+        <h1>Advertising design &amp; aspect ratios</h1>
+        <p class="lead">Make a single campaign work across placements without losing the message.</p>
+        <div class="actions"><button class="print">Print lesson</button><button class="complete" data-day="3">Mark class
+            complete</button></div>
+      </header>
+      <div class="overview">
+        <h2>Today’s plan</h2>
+        <div class="agenda">
+          <div><b>00–10</b><span>Warm-up / recap</span></div>
+          <div><b>10–50</b><span>Ad purpose, hierarchy and branding</span></div>
+          <div><b>50–85</b><span>Aspect ratios and layout critique</span></div>
+          <div><b>85–95</b><span>Break</span></div>
+          <div><b>95–120</b><span>Guided production demo</span></div>
+          <div><b>120–175</b><span>Start Assignment 2</span></div>
+          <div><b>175–180</b><span>Save &amp; exit reflection</span></div>
+        </div>
+        <h3>Learning objectives</h3>
+        <ul>
+          <li>Identify audience, goal and call to action.</li>
+          <li>Use hierarchy, contrast, typography and composition.</li>
+          <li>Adapt a layout to different aspect ratios.</li>
+        </ul>
+      </div>
+      <div class="section-label">PART 01 / LECTURE &amp; DEMONSTRATIONS</div>
+      <div class="topic">
+        <h2>An advertisement is a communication problem</h2>
+        <p>A display ad appears alongside other content; a social feed ad competes with posts; a story or reel fills a
+          tall screen. The goal is not to fill the canvas but to communicate one clear message to a particular audience.
+        </p>
+        <div class="tiles">
+          <article><b>Audience</b>
+            <p>Who should care? What problem do they have?</p>
+          </article>
+          <article><b>Offer</b>
+            <p>What is the value? Why now?</p>
+          </article>
+          <article><b>CTA</b>
+            <p>What action should they take?</p>
+          </article>
+        </div>
+        <p><b>Example:</b> A fictional coffee shop targets commuters with “Order ahead, skip the line.” A strong product
+          shot, short headline and “Order now” outperform a cluttered block of competing text in a small placement.</p>
+      </div>
+      <div class="topic">
+        <h2>Visual hierarchy and composition</h2>
+        <p>Size, weight, contrast, position and negative space guide the eye. Alignment connects elements; repetition
+          reinforces brand identity. Use one dominant focal point, one main message and a legible call to action. Test
+          the ad at actual display size, not just zoomed in.</p>
+        <div class="lab">
+          <h3>Compare two layouts</h3>
+          <div class="compare-ads"><img alt="Cluttered coffee advertisement with competing text and accents"
+              src="assets/ad-clutter.svg" /><img
+              alt="Coffee advertisement with a clear headline, product image and call to action"
+              src="assets/ad-clean.svg" /></div>
+          <p>Which has a clearer first focal point? Which message survives at thumbnail size? Explain your reasoning.
+          </p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Aspect ratio is not resolution</h2>
+        <p>Aspect ratio expresses the relationship of width to height. 1080 × 1920 and 720 × 1280 are both 9:16.
+          Cropping removes content, fitting can add empty space, and stretching distorts shapes. Recomposition means
+          repositioning elements to fit the new canvas.</p>
+        <div class="lab">
+          <h3>Ad placement simulator</h3><label>Placement <select id="ad-ratio">
+              <option value="300,250">Display · 300 × 250</option>
+              <option value="1080,1080">Square · 1080 × 1080</option>
+              <option value="1080,1920">Story · 1080 × 1920</option>
+              <option value="1920,1080">Landscape · 1920 × 1080</option>
+            </select></label>
+          <div class="ad-stage">
+            <div id="ad-preview"><span>ROAST / CO.</span><b>Good<br /> mornings.</b>
+              <div class="coffee-icon">☕</div><small>Fresh coffee. Every day.</small><strong>ORDER NOW</strong>
+            </div>
+          </div><output id="ad-dim"></output>
+          <p>Change the placement. What should move? What needs to become larger or smaller?</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>A useful production brief</h2>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Field</th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Audience</td>
+                <td>Busy commuters</td>
+              </tr>
+              <tr>
+                <td>Objective</td>
+                <td>Increase morning mobile orders</td>
+              </tr>
+              <tr>
+                <td>Message</td>
+                <td>Fresh coffee without the wait</td>
+              </tr>
+              <tr>
+                <td>Visual system</td>
+                <td>Warm cream, dark brown, one bold typeface</td>
+              </tr>
+              <tr>
+                <td>Delivery</td>
+                <td>Three differently composed image exports</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="lab quickquiz">
+        <h3>Check your understanding</h3>
+        <fieldset data-answer="1">
+          <legend>1. What changes between a square and a tall story ad?</legend><label><input name="check-6"
+              type="radio" value="0" /> Only file extension</label><label><input name="check-6" type="radio"
+              value="1" /> Layout and content positioning</label><label><input name="check-6" type="radio" value="2" />
+            Nothing</label>
+          <p class="explanation" hidden="">Recompose instead of stretching.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>2. What is a CTA?</legend><label><input name="check-7" type="radio" value="0" /> Color
+            profile</label><label><input name="check-7" type="radio" value="1" /> Call to action</label><label><input
+              name="check-7" type="radio" value="2" /> Compression table</label>
+          <p class="explanation" hidden="">A CTA tells the viewer what to do next.</p>
+        </fieldset>
+        <fieldset data-answer="0">
+          <legend>3. Which is the better hierarchy test?</legend><label><input name="check-8" type="radio" value="0" />
+            View at intended display size</label><label><input name="check-8" type="radio" value="1" /> Always zoom to
+            400%</label><label><input name="check-8" type="radio" value="2" /> Count layers</label>
+          <p class="explanation" hidden="">Small placements need readable typography and a clear message.</p>
+        </fieldset><button class="check-quiz">Check answers</button><output aria-live="polite"
+          class="quiz-score"></output>
+      </div>
+      <div class="section-label">PART 02 / PRODUCTION STUDIO</div>
+      <div class="exercise"><strong>Guided demo · 25 min</strong>
+        <p>Build the square coffee ad using artboards in Illustrator or Photoshop. Establish a type hierarchy and
+          spacing. Duplicate the artboard and recompose the content for the display size. Export and inspect at 100%.
+        </p>
+      </div>
+      <article class="assignment" id="assignment-2">
+        <div class="eyebrow">GRADED PROJECT 2 / 4</div>
+        <h2>Static digital ad campaign</h2>
+        <p>Design a cohesive campaign for one product, service or event using Photoshop or Illustrator. Make the visual
+          system reusable for the AI-video assignment.</p>
+        <h3>Requirements</h3>
+        <ol>
+          <li>Write a one-sentence audience, goal and call to action. Choose a brand palette and type hierarchy.</li>
+          <li>Create a 300 × 250 display ad, 1080 × 1080 social post and 1080 × 1920 story. Recompose each layout rather
+            than stretching it. These are practice dimensions; actual platform specifications vary.</li>
+          <li>Include a brand name/logo, focal image, readable headline and clear call to action.</li>
+          <li>Export web-ready JPEG, PNG or WebP versions. Record file sizes and explain format choices. Keep a clean
+            product image without text for later animation.</li>
+        </ol>
+        <h3>Submit</h3>
+        <p>Editable source files, three exported ads, clean product image, a short brand/asset sheet and export notes.
+        </p>
+        <h3>Suggested rubric · 100 points</h3>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Criterion</th>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Visual hierarchy and message</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Brand consistency</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Adaptation across aspect ratios</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Export quality and asset credits</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Submit through the course submission system. Your instructor will specify due dates. Keep
+          original editable files and credit your source assets.</p>
+      </article>
+      <div class="exercise"><strong>Studio · 55 min</strong>
+        <p>Pick your campaign subject and create the first layout. Exchange feedback with a partner: can they identify
+          the product, message and CTA within five seconds?</p>
+      </div>
+      <div class="exit">
+        <h3>Before leaving</h3>
+        <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
+      </div>
+      <div class="next"><a href="#home">Course home</a><a href="#class-4">Next class →</a></div>
+    </section>
+    <section class="view lesson" data-view="" id="class-4">
+      <header class="lesson-head">
+        <div class="eyebrow">WEEK 2 / CLASS 04 / 180 MIN</div>
+        <h1>Production workflows &amp; generative images</h1>
+        <p class="lead">Build reusable media assets and use AI selectively to speed up production.</p>
+        <div class="actions"><button class="print">Print lesson</button><button class="complete" data-day="4">Mark class
+            complete</button></div>
+      </header>
+      <div class="overview">
+        <h2>Today’s plan</h2>
+        <div class="agenda">
+          <div><b>00–10</b><span>Warm-up / recap</span></div>
+          <div><b>10–50</b><span>Masters, layers and asset organization</span></div>
+          <div><b>50–85</b><span>Generative AI images and quality control</span></div>
+          <div><b>85–95</b><span>Break</span></div>
+          <div><b>95–120</b><span>Guided production demo</span></div>
+          <div><b>120–175</b><span>Finish Assignment 2</span></div>
+          <div><b>175–180</b><span>Save &amp; exit reflection</span></div>
+        </div>
+        <h3>Learning objectives</h3>
+        <ul>
+          <li>Distinguish editable masters from delivery assets.</li>
+          <li>Use generative image workflows with consistent branding.</li>
+          <li>Apply practical asset rights and web delivery checks.</li>
+        </ul>
+      </div>
+      <div class="section-label">PART 01 / LECTURE &amp; DEMONSTRATIONS</div>
+      <div class="topic">
+        <h2>Source files versus delivery files</h2>
+        <p>Keep editable PSD, AI or other layered masters. Flattened JPEG, PNG and WebP are delivery copies; they do not
+          preserve your full editing structure. Use masks, adjustment layers, smart objects and linked assets to avoid
+          unnecessary destructive edits.</p>
+        <pre><code>campaign/
+  source/     product.psd, brand.ai
+  references/ approved-source.jpg
+  exports/    display-300x250.webp
+              square-1080.jpg
+              story-1080x1920.png
+  notes/      credits.txt, export-log.csv</code></pre>
+        <p>Use consistent names. Keep the unaltered original, and export derivatives from the master rather than
+          recompressing an already compressed delivery file.</p>
+      </div>
+      <div class="topic">
+        <h2>AI as a production assistant</h2>
+        <p>Text-to-image starts with a description. Image editing can add, remove or expand selected regions;
+          reference-driven generation can help preserve visual identity, but cannot guarantee it. Keep brand typography
+          and logos as manually placed elements rather than depending on generated text. Check anatomy, shadows, edges,
+          reflections, claims and consistency.</p>
+        <div class="lab">
+          <h3>Build an image prompt</h3><label>Subject <input id="img-subject"
+              value="A ceramic coffee cup" /></label><label>Composition <input id="img-composition"
+              value="Centered product, copy space on left" /></label><label>Lighting &amp; style <input id="img-style"
+              value="Warm studio light, clean commercial photography" /></label><label>Constraints <input
+              id="img-constraints" value="No text, no logos, neutral background" /></label><button
+            id="build-image">Build prompt</button><textarea aria-label="Generated image prompt" id="image-prompt"
+            readonly="" rows="4"></textarea>
+          <p>Use a reference only if you have rights to upload it. Compare two prompt variations, changing one variable
+            at a time.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Rights, privacy and honest advertising</h2>
+        <p>Use your own work, licensed assets or approved classroom materials. AI tool terms do not automatically settle
+          copyright or trademark questions. Do not upload private client data or other people’s likenesses without
+          permission. Document assets, models and edits; avoid misleading product imagery or false endorsements.
+          Classroom use and public publication are different decisions.</p>
+      </div>
+      <div class="topic">
+        <h2>Inspect actual web media</h2>
+        <p>In the browser Network panel, disable cache, reload and filter images/media. Compare transferred size,
+          resource size, type and dimensions. A good workflow balances visual fidelity with transfer size and decoding
+          cost.</p>
+        <div class="exercise"><strong>Quick experiment · 10 min</strong>
+          <p>Inspect a website or this course site. Identify its largest image and propose one optimization that
+            preserves readability. Repeat at a mobile viewport.</p>
+        </div>
+      </div>
+      <div class="lab quickquiz">
+        <h3>Check your understanding</h3>
+        <fieldset data-answer="0">
+          <legend>1. Which file should preserve editability?</legend><label><input name="check-9" type="radio"
+              value="0" /> Layered master</label><label><input name="check-9" type="radio" value="1" /> Repeatedly
+            compressed JPEG</label><label><input name="check-9" type="radio" value="2" /> Screenshot of the ad</label>
+          <p class="explanation" hidden="">Preserve layers and original assets.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>2. Which is a reliable way to keep brand text accurate?</legend><label><input name="check-10"
+              type="radio" value="0" /> Ask AI for exact text every time</label><label><input name="check-10"
+              type="radio" value="1" /> Place editable typography manually</label><label><input name="check-10"
+              type="radio" value="2" /> Flatten the only master</label>
+          <p class="explanation" hidden="">Manually authored typography provides control.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>3. What should you record when using AI assets?</legend><label><input name="check-11" type="radio"
+              value="0" /> Only file extension</label><label><input name="check-11" type="radio" value="1" /> Source,
+            model, relevant terms and edits</label><label><input name="check-11" type="radio" value="2" />
+            Nothing</label>
+          <p class="explanation" hidden="">Document provenance and disclose use as required.</p>
+        </fieldset><button class="check-quiz">Check answers</button><output aria-live="polite"
+          class="quiz-score"></output>
+      </div>
+      <div class="section-label">PART 02 / PRODUCTION STUDIO</div>
+      <div class="exercise"><strong>Guided demo · 25 min</strong>
+        <p>Show nondestructive cropping, background removal or image expansion (when available), and export three ad
+          sizes. Keep the product-only image ready for Class 5. No AI account or purchase is needed to finish this
+          assignment.</p>
+      </div>
+      <div class="exercise"><strong>Studio · 55 min</strong>
+        <p>Finish <a href="#assignment-2">Assignment 2</a>. Export each composition and document your choices. Critique
+          branding, readability and safe margins. Save one clean product/reference image for the video assignment.</p>
+      </div>
+      <div class="exit">
+        <h3>Before leaving</h3>
+        <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
+      </div>
+      <div class="next"><a href="#home">Course home</a><a href="#class-5">Next class →</a></div>
+    </section>
+    <section class="view lesson" data-view="" id="class-5">
+      <header class="lesson-head">
+        <div class="eyebrow">WEEK 3 / CLASS 05 / 180 MIN</div>
+        <h1>Generative video &amp; shot design</h1>
+        <p class="lead">Direct a miniature commercial using references, prompts, camera language and thoughtful editing.
+        </p>
+        <div class="actions"><button class="print">Print lesson</button><button class="complete" data-day="5">Mark class
+            complete</button></div>
+      </header>
+      <div class="overview">
+        <h2>Today’s plan</h2>
+        <div class="agenda">
+          <div><b>00–10</b><span>Warm-up / recap</span></div>
+          <div><b>10–50</b><span>AI video workflows and cinematography</span></div>
+          <div><b>50–85</b><span>Prompt lab, storyboard and generation critique</span></div>
+          <div><b>85–95</b><span>Break</span></div>
+          <div><b>95–120</b><span>Guided production demo</span></div>
+          <div><b>120–175</b><span>Start Assignment 3</span></div>
+          <div><b>175–180</b><span>Save &amp; exit reflection</span></div>
+        </div>
+        <h3>Learning objectives</h3>
+        <ul>
+          <li>Distinguish text-to-video and image-to-video.</li>
+          <li>Plan consistent shots with clear camera and subject movement.</li>
+          <li>Evaluate output artifacts and manage limited generation access.</li>
+        </ul>
+      </div>
+      <div class="section-label">PART 01 / LECTURE &amp; DEMONSTRATIONS</div>
+      <div class="topic">
+        <h2>How generative video fits production</h2>
+        <p>Generative video synthesizes a sequence conditioned on text, images or other inputs. Unlike traditional
+          animation, it does not necessarily preserve object geometry, exact branding or physics between frames. Use
+          short shots, stable references and simple actions; select good takes and fix problems in editing.</p>
+        <div class="tiles">
+          <article><b>Text → video</b>
+            <p>Describe a shot without a source image. Useful for exploration.</p>
+          </article>
+          <article><b>Image → video</b>
+            <p>Animate a reference image. Useful for a consistent starting composition.</p>
+          </article>
+          <article><b>Start/end frames</b>
+            <p>Some tools accept both endpoints; transitions may still distort subjects.</p>
+          </article>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Camera language and continuity</h2>
+        <p>Shot size changes emphasis: wide establishes location; medium shows context; close-up reveals detail. A pan
+          rotates the camera; a dolly moves it through space; a zoom changes focal length or digitally crops. A locked
+          shot keeps the frame stable. Match lighting, color, product orientation and motion direction across shots.</p>
+        <div class="storyboard">
+          <figure><img alt="Wide product shot with environment" src="assets/shot-wide.svg" />
+            <figcaption>01 / Establish · 4 s</figcaption>
+          </figure>
+          <figure><img alt="Close-up product detail" src="assets/shot-detail.svg" />
+            <figcaption>02 / Detail · 4 s</figcaption>
+          </figure>
+          <figure><img alt="Product end card with open text area" src="assets/shot-end.svg" />
+            <figcaption>03 / End card · 4 s</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Prompt and motion lab</h2>
+        <div class="lab">
+          <h3>Construct a video prompt</h3><label>Subject and action <input id="vid-subject"
+              value="A coffee cup sits on a cafe counter; steam rises slowly" /></label><label>Camera <select
+              id="vid-camera">
+              <option>Locked camera</option>
+              <option>Slow dolly in</option>
+              <option>Gentle pan right</option>
+              <option>Slow orbit</option>
+            </select></label><label>Lighting / style <input id="vid-style"
+              value="Soft morning light, commercial product photography" /></label><label>Continuity constraints <input
+              id="vid-constraints" value="Keep cup shape and position stable, no added text" /></label><button
+            id="build-video">Build prompt</button><textarea aria-label="Generated video prompt" id="video-prompt"
+            readonly="" rows="4"></textarea>
+        </div>
+        <div class="lab">
+          <h3>Keyframes and easing</h3>
+          <p>Compare equal travel distance and duration. Motion is simulated in the browser, not AI-generated.</p>
+          <button id="easing-play">Play comparison</button>
+          <div id="ease-tracks"></div>
+          <p>Linear motion has constant speed; ease-in accelerates, ease-out decelerates, and ease-in-out does both.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Tools and access</h2>
+        <p>Check available models, eligibility, regional rules and credits before generating. Do not pay to complete the
+          assignment. Free access can change, and video may require premium entitlements even when image features are
+          free.</p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Tool</th>
+                <th scope="col">Check before starting</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="https://flow.google/">Google Flow</a></td>
+                <td><a href="https://support.google.com/flow/answer/16526234?hl=en">Current credit policy</a>; available
+                  models and clip costs.</td>
+              </tr>
+              <tr>
+                <td><a href="https://firefly.adobe.com/">Adobe Firefly</a></td>
+                <td><a
+                    href="https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html">Account
+                    entitlements</a>; video generation access.</td>
+              </tr>
+              <tr>
+                <td><a href="https://dreamina.capcut.com/">Dreamina</a> / <a href="https://runwayml.com/">Runway</a>
+                </td>
+                <td>Check the account’s current free allowance, export and watermark rules.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Fallback: use the included motion clips or animate the product image in Premiere with Scale/Position
+          keyframes. Create a prompt log even if you cannot generate.</p>
+      </div>
+      <div class="lab quickquiz">
+        <h3>Check your understanding</h3>
+        <fieldset data-answer="0">
+          <legend>1. Which input best preserves an initial product composition?</legend><label><input name="check-12"
+              type="radio" value="0" /> Image-to-video</label><label><input name="check-12" type="radio" value="1" /> An
+            unrelated audio file</label><label><input name="check-12" type="radio" value="2" /> A renamed
+            extension</label>
+          <p class="explanation" hidden="">Reference conditioning helps but does not guarantee consistency.</p>
+        </fieldset>
+        <fieldset data-answer="0">
+          <legend>2. A pan differs from a dolly because it…</legend><label><input name="check-13" type="radio"
+              value="0" /> Rotates the camera</label><label><input name="check-13" type="radio" value="1" /> Moves the
+            camera through space</label><label><input name="check-13" type="radio" value="2" /> Changes file
+            format</label>
+          <p class="explanation" hidden="">A pan rotates; a dolly translates.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>3. If free credits are exhausted, what is required?</legend><label><input name="check-14" type="radio"
+              value="0" /> Purchase credits</label><label><input name="check-14" type="radio" value="1" /> Use fallback
+            and document prompts</label><label><input name="check-14" type="radio" value="2" /> Skip the whole
+            assignment</label>
+          <p class="explanation" hidden="">The fallback is graded by the same criteria.</p>
+        </fieldset><button class="check-quiz">Check answers</button><output aria-live="polite"
+          class="quiz-score"></output>
+      </div>
+      <div class="section-label">PART 02 / PRODUCTION STUDIO</div>
+      <div class="exercise"><strong>Guided demo · 25 min</strong>
+        <p>Prepare a text-free reference from Assignment 2. Generate a short clip if access is available, inspect the
+          result, revise one variable and compare. Demonstrate assembling two shots and adding text in Premiere (or an
+          approved editor).</p>
+      </div>
+      <article class="assignment" id="assignment-3">
+        <div class="eyebrow">GRADED PROJECT 3 / 4</div>
+        <h2>AI-assisted micro commercial</h2>
+        <p>Extend your static ad campaign into a 10–15 second commercial. Treat AI as one production tool, not a
+          substitute for editorial decisions.</p>
+        <h3>Requirements</h3>
+        <ol>
+          <li>Storyboard two or three shots. Write a prompt for a text-to-video test and an image-to-video test using
+            your clean product reference.</li>
+          <li>Aim to generate two short clips using available approved tools. Use low-cost settings, short durations and
+            the preview before spending credits. No purchase is required.</li>
+          <li>If access, credits or eligibility prevent generation, use the supplied original motion clips or animate
+            your stills with keyframes. Document the constraint and provide two proposed prompts; the same rubric
+            applies.</li>
+          <li>Assemble the sequence, add your own accurate brand text and call to action, and add licensed or original
+            audio if appropriate. Do not remove watermarks.</li>
+          <li>Export MP4/H.264 where possible; record dimensions, frame rate, codec, duration and file size. Note any AI
+            artifacts and how you addressed them.</li>
+        </ol>
+        <h3>Submit</h3>
+        <p>Final video, storyboard, prompt/iteration log (or fallback plan), production source and asset/AI disclosure.
+        </p>
+        <h3>Suggested rubric · 100 points</h3>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Criterion</th>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Concept and shot planning</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Experimentation and iteration evidence</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Editing and brand continuity</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Delivery specifications and disclosure</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Submit through the course submission system. Your instructor will specify due dates. Keep
+          original editable files and credit your source assets.</p>
+      </article>
+      <div class="exercise"><strong>Studio · 55 min</strong>
+        <p>Storyboard your commercial, write both test prompts and begin production. Download the <a download=""
+            href="assets/prompt-log.csv">prompt log</a>. If needed, use the <a download=""
+            href="assets/motion-high.mp4">original practice motion clip</a> and your own keyframed images. This clip is
+          synthetic, not AI-generated or gameplay.</p>
+      </div>
+      <div class="exit">
+        <h3>Before leaving</h3>
+        <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
+      </div>
+      <div class="next"><a href="#home">Course home</a><a href="#class-6">Next class →</a></div>
+    </section>
+    <section class="view lesson" data-view="" id="class-6">
+      <header class="lesson-head">
+        <div class="eyebrow">WEEK 3 / CLASS 06 / 180 MIN</div>
+        <h1>Video codecs, audio &amp; HDR</h1>
+        <p class="lead">Inspect actual encoded footage and learn why file size, editing performance and playback
+          appearance differ.</p>
+        <div class="actions"><button class="print">Print lesson</button><button class="complete" data-day="6">Mark class
+            complete</button></div>
+      </header>
+      <div class="overview">
+        <h2>Today’s plan</h2>
+        <div class="agenda">
+          <div><b>00–10</b><span>Warm-up / recap</span></div>
+          <div><b>10–50</b><span>Frames, encoding and codec/container</span></div>
+          <div><b>50–85</b><span>Compression lab, audio and HDR</span></div>
+          <div><b>85–95</b><span>Break</span></div>
+          <div><b>95–120</b><span>Guided production demo</span></div>
+          <div><b>120–175</b><span>Finish Assignment 3 + capture experiment</span></div>
+          <div><b>175–180</b><span>Save &amp; exit reflection</span></div>
+        </div>
+        <h3>Learning objectives</h3>
+        <ul>
+          <li>Explain frames, bitrate, codecs, containers and transcoding.</li>
+          <li>Compare real encodes and inspect browser support.</li>
+          <li>Explain audio sampling and distinguish HDR from SDR.</li>
+        </ul>
+      </div>
+      <div class="section-label">PART 01 / LECTURE &amp; DEMONSTRATIONS</div>
+      <div class="topic" id="video">
+        <h2>Video: frames, time and compression</h2>
+        <p>Video presents frames over time, commonly at 24, 25, 30, 50 or 60 fps (including fractional variants). At 30
+          fps a minute contains 1,800 displayed frames. Encoding represents media in a defined format; it often
+          compresses it. Decoding reconstructs playable samples. Transcoding decodes and re-encodes, whereas remuxing
+          repackages encoded streams without re-encoding.</p>
+        <div class="lab">
+          <h3>Frame-rate simulator</h3><label>Frames per second <select id="fps">
+              <option>6</option>
+              <option>12</option>
+              <option selected="">24</option>
+              <option>30</option>
+              <option>60</option>
+            </select></label><button id="play">Play motion</button>
+          <div class="track">
+            <div id="ball"></div>
+          </div><output id="frameOut"></output>
+          <p>Motion is sampled at the selected rate; the display refresh rate also limits what you see. This is a
+            simulation, not an encoded video.</p>
+        </div>
+        <h3>How inter-frame compression works</h3>
+        <div class="tiles">
+          <article><b>I frame</b>
+            <p>Intra-coded picture; uses information within the picture.</p>
+          </article>
+          <article><b>P frame</b>
+            <p>Prediction from reference pictures plus residual differences.</p>
+          </article>
+          <article><b>B frame</b>
+            <p>May use prediction from earlier and later pictures.</p>
+          </article>
+        </div>
+        <p>Encoders exploit spatial similarity and changes across time; they do not simply delete duplicate images. Not
+          every codec uses the same frame structure. Motion, texture and noise can require more data to preserve
+          quality.</p>
+        <div class="lab">
+          <h3>Video storage estimator</h3>
+          <div class="controls"><label>Video Mbps<input id="mbps" min="0" step="0.1" type="number"
+                value="8" /></label><label>Audio kbps<input id="kbps" min="0" type="number"
+                value="192" /></label><label>Duration (minutes)<input id="minutes" min="0" step="0.5" type="number"
+                value="5" /></label></div>
+          <div aria-live="polite" class="result" id="videoOut"></div>
+          <p>Estimated decimal MB = total Mbps × seconds ÷ 8. Actual VBR output and container overhead vary.</p>
+        </div>
+      </div>
+      <div class="topic" id="codecs">
+        <h2>Codecs are not containers</h2>
+        <p>A codec defines how media is encoded and decoded. A container organizes streams, timing, captions and
+          metadata. An MP4 extension does not tell you which video codec is inside.</p>
+        <div class="tablewrap">
+          <table>
+            <tr>
+              <th>Video codec</th>
+              <th>Typical containers</th>
+              <th>Production decision</th>
+            </tr>
+            <tr>
+              <td>H.264 / AVC</td>
+              <td>MP4, MOV</td>
+              <td>Reliable general delivery</td>
+            </tr>
+            <tr>
+              <td>H.265 / HEVC</td>
+              <td>MP4, MOV</td>
+              <td>Efficient high-resolution delivery; support varies</td>
+            </tr>
+            <tr>
+              <td>VP9</td>
+              <td>WebM, MKV</td>
+              <td>Web streaming</td>
+            </tr>
+            <tr>
+              <td>AV1</td>
+              <td>WebM, MP4, MKV</td>
+              <td>Efficient delivery; encoding and decoding costs vary</td>
+            </tr>
+            <tr>
+              <td>ProRes / DNxHR</td>
+              <td>MOV, MXF (depending on codec)</td>
+              <td>Editing intermediates, not default web delivery</td>
+            </tr>
+          </table>
+        </div>
+        <p>AVI, FLV and Windows Media are historical formats; DivX and MPEG-4 Part 2 are legacy codecs. MPEG-4 is a
+          family of standards, not a single codec. MP4/H.264/AAC is a practical baseline; WebM/VP9/Opus is another
+          option. Check target devices and codec profiles.</p>
+        <div class="lab">
+          <h3>Inspect your browser</h3>
+          <p>Reported playback hints from canPlayType(), not a guarantee of hardware acceleration or successful
+            playback.</p>
+          <div id="support"></div>
+        </div>
+        <div class="exercise"><b>Mini project · 20 min</b>
+          <p>In Premiere or Shutter Encoder export a 10-second clip at 1080p using H.264 at 2 and 8 Mbps. Inspect both
+            with MediaInfo (codec, container, bitrate, fps). Compare motion and detail. Optional: export AV1 or VP9 if
+            available. Record results and justify a web delivery choice.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Real video compression comparison</h2>
+        <p>These two original synthetic motion clips have the same resolution, frame rate and duration, encoded at
+          different H.264 quality settings. Play together, pause and inspect fine moving details. They are local
+          practice assets, not actual gameplay.</p>
+        <div class="lab">
+          <div class="video-grid">
+            <figure><video controls="" id="vid-high" muted="" playsinline="" preload="metadata"
+                src="assets/motion-high.mp4"></video>
+              <figcaption id="high-meta">Higher quality</figcaption>
+            </figure>
+            <figure><video controls="" id="vid-low" muted="" playsinline="" preload="metadata"
+                src="assets/motion-low.mp4"></video>
+              <figcaption id="low-meta">Lower quality</figcaption>
+            </figure>
+          </div>
+          <div class="actions"><button id="sync-play">Play both</button><button id="sync-pause">Pause
+              both</button><button id="sync-reset">Restart</button></div><label>Use your own high-quality clip <input
+              accept="video/*" id="upload-high" type="file" /></label><label>Use your own compressed clip <input
+              accept="video/*" id="upload-low" type="file" /></label>
+          <p>Choose locally stored compatible versions of the same scene. Files stay on your device. Browser playback
+            support varies; compare in Premiere or MediaInfo if necessary. Simultaneous playback is approximate, not
+            frame-locked.</p>
+        </div>
+      </div>
+      <div class="topic" id="audio">
+        <h2>Digital audio</h2>
+        <p>Sample rate is samples per second per channel; bit depth is precision per PCM sample; channels describe
+          separate streams such as stereo. 44.1 kHz is common for music and 48 kHz for video. WAV often contains
+          uncompressed PCM; FLAC is lossless; MP3, AAC and Opus are typically lossy. Bitrate is data per second, not
+          sample rate.</p>
+        <div class="lab">
+          <h3>Sample a waveform</h3><label>Samples per cycle <input id="samples" max="32" min="2" type="range"
+              value="8" /></label><canvas aria-label="Sine wave and discrete sample points" height="180" id="wave"
+            width="768"></canvas><output id="sampleOut"></output>
+          <p>The dots illustrate discrete sampling, not the reconstructed analog waveform. At least more than twice the
+            highest frequency is needed for ideal band-limited reconstruction.</p>
+        </div>
+        <div class="exercise"><b>Practice · 10 min</b>
+          <p>Record 10 seconds of speech. Export WAV PCM and MP3 or AAC at two bitrates. Compare file sizes and listen
+            through headphones. Include a transcript.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>HDR, SDR and color management</h2>
+        <p>SDR commonly uses Rec.709 for video delivery. HDR can use PQ or HLG transfer functions and wider color
+          primaries; bit depth and gamut alone do not define HDR. An HDR clip interpreted with the wrong transfer
+          function or output transform may appear washed out, dark or clipped. Tone mapping deliberately maps HDR
+          luminance into the SDR range; it is not simply reducing exposure.</p>
+        <div class="lab">
+          <h3>Illustrative tone mapping comparison</h3>
+          <div class="tone-grid">
+            <div class="tone correct">Correct SDR</div>
+            <div class="tone washed">Washed-out appearance</div>
+            <div class="tone clipped">Clipped highlights</div>
+          </div>
+          <p>These CSS gradients illustrate possible symptoms, not calibrated HDR footage. Inspect source color
+            metadata, sequence color management, output color space and playback device to diagnose real video.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Gameplay capture workflow</h2>
+        <p>On PS5, use Create and capture settings to record a short sequence. Copy approved clips via available console
+          transfer options. Inspect the actual file rather than assuming the extension identifies the codec. Gameplay
+          may contain copyrighted content, voice chat or personal identifiers. Disable unnecessary microphone/chat
+          capture; only distribute footage with appropriate permission.</p>
+        <p><a href="https://www.playstation.com/en-us/support/games/capture-ps5-gameplay-screenshots/">Official PS5
+            capture instructions</a> · <a href="https://mediaarea.net/en/MediaInfo">MediaInfo</a> · <a
+            href="https://www.shutterencoder.com/">Shutter Encoder</a></p>
+      </div>
+      <div class="lab quickquiz">
+        <h3>Check your understanding</h3>
+        <fieldset data-answer="1">
+          <legend>1. MP4 is a…</legend><label><input name="check-15" type="radio" value="0" />
+            Codec</label><label><input name="check-15" type="radio" value="1" /> Container</label><label><input
+              name="check-15" type="radio" value="2" /> Bitrate</label>
+          <p class="explanation" hidden="">A container packages streams and metadata.</p>
+        </fieldset>
+        <fieldset data-answer="0">
+          <legend>2. Which operation repackages streams without re-encoding?</legend><label><input name="check-16"
+              type="radio" value="0" /> Remuxing</label><label><input name="check-16" type="radio" value="1" />
+            Transcoding</label><label><input name="check-16" type="radio" value="2" /> Resampling</label>
+          <p class="explanation" hidden="">Remuxing changes packaging, not the encoded stream.</p>
+        </fieldset>
+        <fieldset data-answer="0">
+          <legend>3. A washed-out HDR export may result from…</legend><label><input name="check-17" type="radio"
+              value="0" /> Color interpretation or output mismatch</label><label><input name="check-17" type="radio"
+              value="1" /> The file name alone</label><label><input name="check-17" type="radio" value="2" /> Frame rate
+            alone</label>
+          <p class="explanation" hidden="">Inspect transfer functions, color management and output mapping.</p>
+        </fieldset><button class="check-quiz">Check answers</button><output aria-live="polite"
+          class="quiz-score"></output>
+      </div>
+      <div class="section-label">PART 02 / PRODUCTION STUDIO</div>
+      <div class="exercise"><strong>Guided demo · 25 min</strong>
+        <p>Use a supplied motion clip or approved gameplay recording. Inspect codec, container, color metadata,
+          duration, dimensions and fps. Export two H.264 MP4 versions at different bitrates, keeping dimensions and
+          frame rate fixed. Compare playback and file sizes. If using HDR, create an explicitly tone-mapped SDR version.
+        </p>
+      </div>
+      <div class="exercise"><strong>Studio · 55 min</strong>
+        <p>Spend 25 minutes on the encode experiment with <a download="" href="assets/video-comparison.csv">the
+            worksheet</a>, then 30 minutes finishing <a href="#assignment-3">Assignment 3</a>. If your editor cannot
+          decode the original WebM, transcode to an editing-friendly format or a tested H.264 copy. Keep the original.
+        </p>
+      </div>
+      <div class="exit">
+        <h3>Before leaving</h3>
+        <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
+      </div>
+      <div class="next"><a href="#home">Course home</a><a href="#class-7">Next class →</a></div>
+    </section>
+    <section class="view lesson" data-view="" id="class-7">
+      <header class="lesson-head">
+        <div class="eyebrow">WEEK 4 / CLASS 07 / 180 MIN</div>
+        <h1>Premiere Pro &amp; short-form storytelling</h1>
+        <p class="lead">Turn raw footage into an intentional story using editing, pacing, audio and captions.</p>
+        <div class="actions"><button class="print">Print lesson</button><button class="complete" data-day="7">Mark class
+            complete</button></div>
+      </header>
+      <div class="overview">
+        <h2>Today’s plan</h2>
+        <div class="agenda">
+          <div><b>00–10</b><span>Warm-up / recap</span></div>
+          <div><b>10–50</b><span>Story and editing language</span></div>
+          <div><b>50–85</b><span>Premiere workflow, audio and caption demo</span></div>
+          <div><b>85–95</b><span>Break</span></div>
+          <div><b>95–120</b><span>Guided production demo</span></div>
+          <div><b>120–175</b><span>Gameplay trailer practice + start final</span></div>
+          <div><b>175–180</b><span>Save &amp; exit reflection</span></div>
+        </div>
+        <h3>Learning objectives</h3>
+        <ul>
+          <li>Create an organized project and sequence.</li>
+          <li>Edit with cuts, trims, keyframes and audio controls.</li>
+          <li>Plan a 45–60 second reel with accessible captions.</li>
+        </ul>
+      </div>
+      <div class="section-label">PART 01 / LECTURE &amp; DEMONSTRATIONS</div>
+      <div class="topic">
+        <h2>Story structure and pacing</h2>
+        <p>A short reel needs a reason to keep watching. A hook establishes interest, the middle develops the idea, and
+          the payoff resolves it. For an educational reel, state the question, demonstrate the answer, then summarize.
+          For gameplay, establish the challenge, show progress, and end on a meaningful moment rather than random cuts.
+        </p>
+        <div class="lab">
+          <h3>Build a 60-second edit plan</h3><label>Hook (seconds) <input id="hook" max="15" min="2" type="range"
+              value="5" /></label><label>Payoff (seconds) <input id="payoff" max="20" min="3" type="range"
+              value="10" /></label>
+          <div class="edit-plan" id="edit-plan"></div><output id="edit-plan-out"></output>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Editing workflow in Premiere</h2>
+        <ol>
+          <li>Create a project and organize footage into bins (video, audio, graphics, sequences).</li>
+          <li>Import clips and inspect source properties. If high-resolution footage is slow, create proxies and toggle
+            them for editing.</li>
+          <li>Set the sequence frame size, timebase and color space; for the final use 1080 × 1920. Reframe horizontal
+            footage rather than stretching.</li>
+          <li>Mark in/out points, assemble a rough cut, then refine timing with trim, ripple edit and intentional cuts.
+          </li>
+          <li>Use Position and Scale keyframes for simple motion. Apply transitions only when they serve the story.</li>
+          <li>Adjust audio clip gain and track levels; avoid clipping. Keep speech understandable over music. Fade music
+            at the beginning and end.</li>
+          <li>Save and review the edit. Export a test and watch it outside the editor.</li>
+        </ol>
+      </div>
+      <div class="topic">
+        <h2>Captions and accessibility</h2>
+        <p>Captions represent spoken dialogue and meaningful non-speech sounds. Subtitles often translate dialogue.
+          Automatic speech recognition is a starting point, not a finished accessibility deliverable. Correct names,
+          punctuation and timing. Use readable contrast, sensible line breaks and enough display time. SRT and WebVTT
+          store timed text; burn-in makes captions visible but not selectable.</p>
+        <div class="lab">
+          <h3>Caption &amp; safe-zone preview</h3><label><input checked="" id="safe-toggle" type="checkbox" /> Show
+            illustrative interface overlays</label><label>Caption <input id="caption-text"
+              value="The best moment is still ahead." /></label>
+          <div class="phone-preview">
+            <div class="phone-scene">
+              <div class="phone-title">THE NEXT LEVEL</div>
+              <div id="phone-caption">The best moment is still ahead.</div>
+              <div class="overlay top"></div>
+              <div class="overlay bottom"></div>
+              <div class="overlay side"></div>
+            </div>
+          </div>
+          <p>Actual safe zones vary by platform and placement. Keep captions away from controls and test on the
+            destination.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Guided gameplay trailer</h2>
+        <p>Use instructor-provided approved gameplay footage or the supplied practice clips. Work with the same source
+          media as classmates so you can compare editorial decisions. Choose 4–6 beats, cut a 20–30 second trailer, add
+          a title and review the audio. This is practice, not another graded assignment.</p>
+        <p><a download="" href="assets/motion-high.mp4">Practice clip A</a> · <a download=""
+            href="assets/motion-alt.mp4">Practice clip B</a> · <a download="" href="assets/practice-tone.wav">Original
+            short audio tone for technical testing</a> (not background music).</p>
+      </div>
+      <div class="lab quickquiz">
+        <h3>Check your understanding</h3>
+        <fieldset data-answer="0">
+          <legend>1. What do proxies help with?</legend><label><input name="check-18" type="radio" value="0" /> Editing
+            performance</label><label><input name="check-18" type="radio" value="1" /> Changing
+            copyright</label><label><input name="check-18" type="radio" value="2" /> Increasing source detail</label>
+          <p class="explanation" hidden="">Proxies are lighter editing copies linked to originals.</p>
+        </fieldset>
+        <fieldset data-answer="0">
+          <legend>2. Why correct automatic captions?</legend><label><input name="check-19" type="radio" value="0" />
+            Speech recognition may misidentify words</label><label><input name="check-19" type="radio" value="1" />
+            Captions never need timing</label><label><input name="check-19" type="radio" value="2" /> To remove
+            accessibility</label>
+          <p class="explanation" hidden="">Review text, synchronization and meaningful sound cues.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>3. What makes a strong short reel?</legend><label><input name="check-20" type="radio" value="0" />
+            Random clips only</label><label><input name="check-20" type="radio" value="1" /> Hook, development and
+            payoff</label><label><input name="check-20" type="radio" value="2" /> Largest possible file</label>
+          <p class="explanation" hidden="">A clear narrative supports pacing.</p>
+        </fieldset><button class="check-quiz">Check answers</button><output aria-live="polite"
+          class="quiz-score"></output>
+      </div>
+      <div class="section-label">PART 02 / PRODUCTION STUDIO</div>
+      <div class="exercise"><strong>Guided demo · 25 min</strong>
+        <p>Import clips, create bins, set a sequence, trim to a rough cut, add a title, adjust audio and demonstrate
+          transcript/caption creation. Show proxy workflow if playback is choppy.</p>
+      </div>
+      <article class="assignment" id="assignment-4">
+        <div class="eyebrow">GRADED PROJECT 4 / 4</div>
+        <h2>Final project · One-minute reel</h2>
+        <p>Produce a 45–60 second vertical reel in Premiere Pro: a gameplay highlight, travel piece, educational
+          explainer, product promotion or short story.</p>
+        <h3>Requirements</h3>
+        <ol>
+          <li>Plan a beginning, development and payoff. Use your own or approved footage (gameplay only when usage is
+            permitted).</li>
+          <li>Create a 1080 × 1920 sequence; choose a frame rate that suits your footage. Use multiple intentional
+            shots, cuts, title graphics and clean audio.</li>
+          <li>Include accurate, synchronized captions for speech and meaningful sound cues. Review automatic
+            transcription and correct mistakes. Export a separate SRT if supported, plus visible captions in the
+            delivery video.</li>
+          <li>Keep important text clear of interface overlays; check the edit in a phone-sized preview.</li>
+          <li>Export MP4/H.264 with AAC audio as a practical delivery baseline, using SDR Rec.709 unless an HDR workflow
+            is intentionally selected and tested. Inspect the exported file and watch it from start to finish.</li>
+        </ol>
+        <h3>Submit</h3>
+        <p>Premiere project and linked media (or agreed project package), final MP4, caption file when applicable,
+          source credits and a short export/quality-control report.</p>
+        <h3>Suggested rubric · 100 points</h3>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Criterion</th>
+                <th scope="col">Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Story and pacing</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Editing and visual quality</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Audio and accurate captions</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Delivery, organization and credits</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Submit through the course submission system. Your instructor will specify due dates. Keep
+          original editable files and credit your source assets.</p>
+      </article>
+      <div class="exercise"><strong>Studio · 55 min</strong>
+        <p>Spend 20 minutes on the guided trailer edit, then 35 minutes planning your final reel and assembling the
+          first rough cut. Complete the <a download="" href="assets/reel-shot-list.csv">shot list</a>. You may use
+          approved gameplay, your own footage, AI clips or other licensed content.</p>
+      </div>
+      <div class="exit">
+        <h3>Before leaving</h3>
+        <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
+      </div>
+      <div class="next"><a href="#home">Course home</a><a href="#class-8">Next class →</a></div>
+    </section>
+    <section class="view lesson" data-view="" id="class-8">
+      <header class="lesson-head">
+        <div class="eyebrow">WEEK 4 / CLASS 08 / 180 MIN</div>
+        <h1>Media delivery &amp; final project review</h1>
+        <p class="lead">Export, inspect and present a polished reel that works on its intended device.</p>
+        <div class="actions"><button class="print">Print lesson</button><button class="complete" data-day="8">Mark class
+            complete</button></div>
+      </header>
+      <div class="overview">
+        <h2>Today’s plan</h2>
+        <div class="agenda">
+          <div><b>00–10</b><span>Warm-up / recap</span></div>
+          <div><b>10–50</b><span>Export and color troubleshooting</span></div>
+          <div><b>50–85</b><span>Web delivery, accessibility and critique</span></div>
+          <div><b>85–95</b><span>Break</span></div>
+          <div><b>95–120</b><span>Guided production demo</span></div>
+          <div><b>120–175</b><span>Finish and present final project</span></div>
+          <div><b>175–180</b><span>Save &amp; exit reflection</span></div>
+        </div>
+        <h3>Learning objectives</h3>
+        <ul>
+          <li>Select appropriate delivery settings and distinguish master from distribution copy.</li>
+          <li>Use captions, responsive media and quality-control procedures.</li>
+          <li>Evaluate and present a finished reel.</li>
+        </ul>
+      </div>
+      <div class="section-label">PART 01 / LECTURE &amp; DEMONSTRATIONS</div>
+      <div class="topic">
+        <h2>Export decisions</h2>
+        <p>Choose a container and codec the target accepts. MP4/H.264/AAC is a practical baseline for broad delivery;
+          HEVC and AV1 can be efficient but may have workflow compatibility limits. Match frame rate to the intended
+          sequence, avoid unnecessary upscaling, and adjust bitrate to the quality required. VBR allocates bits based on
+          complexity; CBR targets a more constant rate. Export a short test before a full render.</p>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Setting</th>
+                <th scope="col">Practical baseline for this project</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Frame size</td>
+                <td>1080 × 1920, vertical</td>
+              </tr>
+              <tr>
+                <td>Frame rate</td>
+                <td>Match intended sequence / source cadence</td>
+              </tr>
+              <tr>
+                <td>Video codec + container</td>
+                <td>H.264 / MP4</td>
+              </tr>
+              <tr>
+                <td>Audio</td>
+                <td>AAC, 48 kHz, stereo when appropriate</td>
+              </tr>
+              <tr>
+                <td>Color</td>
+                <td>SDR Rec.709 unless HDR is intentionally tested</td>
+              </tr>
+              <tr>
+                <td>Bitrate</td>
+                <td>Start with a reasonable preset, then inspect quality and size</td>
+              </tr>
+              <tr>
+                <td>Captions</td>
+                <td>Accurate visible captions, plus separate SRT when applicable</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Social platforms can re-encode uploads. Uploading an HDR master does not guarantee immediate HDR playback.
+          Test actual exports on the destination and avoid judging color from only one application.</p>
+      </div>
+      <div class="topic" id="publish">
+        <h2>Publish for real users</h2>
+        <p>Choose dimensions based on displayed size and device density. Use responsive image candidates, meaningful
+          alternative text, explicit dimensions to prevent layout shift, and lazy loading below the fold. Avoid lazy
+          loading the main hero image. For video, supply controls, captions and a poster; avoid autoplay with sound. Use
+          transcripts for audio. Preserve masters; publish optimized copies.</p>
+        <pre><code>&lt;picture&gt;
+  &lt;source srcset="hero.avif" type="image/avif"&gt;
+  &lt;source srcset="hero.webp" type="image/webp"&gt;
+  &lt;img src="hero.jpg" alt="Sunlit mountain trail"
+       width="1200" height="800"&gt;
+&lt;/picture&gt;</code></pre>
+        <p>Example format fallback; the referenced assets are illustrative. Add width-based srcset and sizes for
+          responsive resolution selection.</p>
+        <div class="exercise"><b>Browser detective · 10 min</b>
+          <p>Open DevTools → Network, disable cache and reload a page. Filter images and media. Record transferred
+            bytes, types and largest resources. Use a mobile viewport and compare. Identify one improvement.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Web video embedding</h2>
+        <p>Provide player controls and a caption track for spoken content. Use an appropriate poster and avoid autoplay
+          with sound. Browser support depends on the container, codec and profile.</p>
+        <pre><code>&lt;video controls preload="metadata" poster="poster.jpg"&gt;
+  &lt;source src="reel.mp4" type="video/mp4"&gt;
+  &lt;track kind="captions" src="reel.vtt"
+         srclang="en" label="English" default&gt;
+&lt;/video&gt;</code></pre>
+        <div class="lab">
+          <h3>Actual local video with a caption track</h3><video controls="" preload="metadata"
+            src="assets/motion-high.mp4">
+            <track default="" kind="captions" label="English" src="assets/practice.vtt" srclang="en" />
+          </video>
+          <p>Enable captions in the controls. The sample contains moving graphics and no spoken audio. Caption loading
+            works best from a local web server or GitHub Pages.</p>
+        </div>
+      </div>
+      <div class="topic">
+        <h2>Final quality-control checklist</h2>
+        <div class="lab" id="qc">
+          <h3>Before publishing</h3>
+          <p>Use these checks on your exported file, not just the timeline. Progress is stored in this browser when
+            available.</p><label><input data-qc="0" type="checkbox" /> Correct duration, orientation and
+            dimensions</label><label><input data-qc="1" type="checkbox" /> Intentional beginning, middle and
+            ending</label><label><input data-qc="2" type="checkbox" /> No black frames, accidental cuts or distorted
+            crops</label><label><input data-qc="3" type="checkbox" /> Text readable on a phone and clear of
+            overlays</label><label><input data-qc="4" type="checkbox" /> Accurate and synchronized
+            captions</label><label><input data-qc="5" type="checkbox" /> Speech clear; audio does not
+            clip</label><label><input data-qc="6" type="checkbox" /> Correct codec, container, color and file
+            size</label><label><input data-qc="7" type="checkbox" /> All assets credited; public sharing
+            permitted</label><label><input data-qc="8" type="checkbox" /> Project and deliverables saved and
+            organized</label><output id="qc-progress"></output>
+        </div>
+      </div>
+      <div class="lab quickquiz">
+        <h3>Check your understanding</h3>
+        <fieldset data-answer="1">
+          <legend>1. What should you review before submission?</legend><label><input name="check-21" type="radio"
+              value="0" /> Only the Premiere timeline</label><label><input name="check-21" type="radio" value="1" /> The
+            exported file on target playback devices</label><label><input name="check-21" type="radio" value="2" /> Only
+            the filename</label>
+          <p class="explanation" hidden="">Delivery quality depends on the exported file.</p>
+        </fieldset>
+        <fieldset data-answer="0">
+          <legend>2. What is a practical general web-video baseline?</legend><label><input name="check-22" type="radio"
+              value="0" /> MP4/H.264 with AAC</label><label><input name="check-22" type="radio" value="1" /> FLV
+            only</label><label><input name="check-22" type="radio" value="2" /> Uncompressed RAW video</label>
+          <p class="explanation" hidden="">This combination is widely supported, though target requirements vary.</p>
+        </fieldset>
+        <fieldset data-answer="1">
+          <legend>3. When is public posting of gameplay appropriate?</legend><label><input name="check-23" type="radio"
+              value="0" /> Always</label><label><input name="check-23" type="radio" value="1" /> When applicable rights
+            and policies permit it</label><label><input name="check-23" type="radio" value="2" /> Only if the file is
+            small</label>
+          <p class="explanation" hidden="">Classroom use does not automatically grant public publishing rights.</p>
+        </fieldset><button class="check-quiz">Check answers</button><output aria-live="polite"
+          class="quiz-score"></output>
+      </div>
+      <div class="section-label">PART 02 / PRODUCTION STUDIO</div>
+      <div class="exercise"><strong>Guided demo · 25 min</strong>
+        <p>Export a reel from Premiere, inspect it with MediaInfo, open it in a browser and a video player, and compare
+          against the timeline. Show how to fix a caption, export again and verify the actual delivery copy.</p>
+      </div>
+      <div class="exercise"><strong>Studio · 55 min</strong>
+        <p>Finish <a href="#assignment-4">the final reel</a> and run the checklist. Reserve the final 15–20 minutes for
+          short peer screenings as time allows. Each student explains one creative choice and one technical delivery
+          choice. Submit through the instructor’s designated system.</p>
+      </div>
+      <div class="exit">
+        <h3>Before leaving</h3>
+        <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
+      </div>
+      <div class="next"><a href="#home">Course home</a><a href="#assignments">Review projects →</a></div>
+    </section>
+    <section class="view" data-view="" id="assignments">
+      <div class="eyebrow">PROJECT INDEX</div>
+      <h1>Assignments</h1>
+      <p class="lead">Four graded projects, one per week. Use these links to jump directly to the complete instructions
+        and rubric inside the class lesson.</p>
+      <div class="project-grid"><a href="#assignment-1"><small>WEEK 1</small><b>Meme &amp; image formats</b><span>Open
+            full brief →</span></a><a href="#assignment-2"><small>WEEK 2</small><b>Static digital ad
+            campaign</b><span>Open full brief →</span></a><a href="#assignment-3"><small>WEEK 3</small><b>AI-assisted
+            micro commercial</b><span>Open full brief →</span></a><a href="#assignment-4"><small>WEEK 4</small><b>Final
+            reel</b><span>Open full brief →</span></a></div>
+      <p>Check each brief for deliverables, suggested points and submission instructions. Due dates are announced by
+        your instructor.</p>
+    </section>
+    <section class="view" data-view="" id="resources">
+      <div class="eyebrow">REFERENCE / DOWNLOADS</div>
+      <h1>Resource library</h1>
+      <p>All included media is original synthetic practice content, not PS5 footage or AI-generated samples. Upload your
+        own authorized clips in Class 6 without sending them to a server.</p>
+      <h2>Practice files</h2>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">File</th>
+              <th scope="col">Use</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><a download="" href="assets/meme-base.png">meme-base.png</a></td>
+              <td>Original starter graphic</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/image-comparison.csv">image-comparison.csv</a></td>
+              <td>Assignment 1 export measurements</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/prompt-log.csv">prompt-log.csv</a></td>
+              <td>Assignment 3 prompt revisions</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/video-comparison.csv">video-comparison.csv</a></td>
+              <td>Class 6 codec / bitrate experiment</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/reel-shot-list.csv">reel-shot-list.csv</a></td>
+              <td>Final project planning</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/motion-high.mp4">motion-high.mp4</a></td>
+              <td>Higher-quality motion sample</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/motion-low.mp4">motion-low.mp4</a></td>
+              <td>Lower-quality motion sample</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/motion-alt.mp4">motion-alt.mp4</a></td>
+              <td>Second original motion clip</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/practice-tone.wav">practice-tone.wav</a></td>
+              <td>Audio technical test</td>
+            </tr>
+            <tr>
+              <td><a download="" href="assets/practice.vtt">practice.vtt</a></td>
+              <td>WebVTT caption example</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Technical references</h2>
+      <div class="links"><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Image_types">MDN ·
+          image types ↗</a><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Video_codecs">MDN
+          · video codecs ↗</a><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Containers">MDN
+          · containers ↗</a><a href="https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Formats/Audio_codecs">MDN
+          · audio codecs ↗</a><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Responsive_images">MDN ·
+          responsive images ↗</a><a
+          href="https://www.playstation.com/en-us/support/games/capture-ps5-gameplay-screenshots/">PS5 · capture ↗</a><a
+          href="https://helpx.adobe.com/creative-cloud/apps/generative-ai/generative-credits-faq.html">Adobe ·
+          generative credits ↗</a><a href="https://support.google.com/flow/answer/16526234?hl=en">Google Flow · credits
+          ↗</a><a href="https://docs.github.com/en/pages/quickstart">GitHub Pages · quickstart ↗</a></div>
+      <h2>Glossary</h2>
+      <div class="tablewrap">
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Term</th>
+              <th scope="col">Meaning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Raster</td>
+              <td>Grid of pixel samples</td>
+            </tr>
+            <tr>
+              <td>Vector</td>
+              <td>Geometry represented by paths and shapes</td>
+            </tr>
+            <tr>
+              <td>Bit depth</td>
+              <td>Number of bits representing a sample or pixel, depending on context</td>
+            </tr>
+            <tr>
+              <td>PPI</td>
+              <td>Pixels per inch; physical image mapping</td>
+            </tr>
+            <tr>
+              <td>DPI</td>
+              <td>Dots per inch; printing device dot density</td>
+            </tr>
+            <tr>
+              <td>Alpha</td>
+              <td>Transparency / opacity channel</td>
+            </tr>
+            <tr>
+              <td>Gamut</td>
+              <td>Range of representable colors</td>
+            </tr>
+            <tr>
+              <td>Codec</td>
+              <td>Method for encoding and decoding a media stream</td>
+            </tr>
+            <tr>
+              <td>Container</td>
+              <td>Structure packaging streams and metadata</td>
+            </tr>
+            <tr>
+              <td>Bitrate</td>
+              <td>Bits per second</td>
+            </tr>
+            <tr>
+              <td>Transcode</td>
+              <td>Decode and re-encode to a new representation</td>
+            </tr>
+            <tr>
+              <td>Remux</td>
+              <td>Repackage encoded streams without re-encoding</td>
+            </tr>
+            <tr>
+              <td>Proxy</td>
+              <td>Lighter editing copy linked to the source</td>
+            </tr>
+            <tr>
+              <td>HDR</td>
+              <td>High dynamic range representation and display workflow</td>
+            </tr>
+            <tr>
+              <td>Caption</td>
+              <td>Timed text conveying dialogue and meaningful sounds</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer>WST 156 · Web Media Production <span>Revised November 2026</span></footer>
+  </main><noscript>
+    <p>JavaScript is disabled. All lecture notes are available; labs and navigation enhancements require JavaScript.</p>
+  </noscript>
+</body>
+
+</html>
