@@ -15,6 +15,93 @@ let vids = [el('vid-high'), el('vid-low')]; el('sync-play').onclick = () => { le
 bind(['hook', 'payoff'], () => { let h = +el('hook').value, p = +el('payoff').value, m = 60 - h - p; el('edit-plan').replaceChildren(...[['Hook', h], ['Middle', m], ['Payoff', p]].map(([name, n]) => { let d = document.createElement('div'); d.style.flex = n; d.textContent = name + ' ' + n + 's'; return d })); el('edit-plan-out').textContent = `${h}s hook + ${m}s development + ${p}s payoff = 60s` }); bind(['safe-toggle', 'caption-text'], () => { all('.overlay').forEach(o => o.hidden = !el('safe-toggle').checked); el('phone-caption').textContent = el('caption-text').value });
 let qc = get('wmp-qc', []); function qcUpdate() { qc = all('[data-qc]:checked').map(x => x.dataset.qc); put('wmp-qc', qc); el('qc-progress').textContent = `${qc.length} / ${all('[data-qc]').length} checks complete` }; all('[data-qc]').forEach(x => { x.checked = qc.includes(x.dataset.qc); x.onchange = qcUpdate }); qcUpdate();
 
+const comparisonCanvas = el('meme-comparison-preview');
+if (comparisonCanvas) {
+    const comparisonContext = comparisonCanvas.getContext('2d');
+    const comparisonFields = all('[data-meme-field]');
+    const comparisonColumns = [130, 130, 130, 145, 250, 300, 240, 391];
+    const comparisonHeaders = ['Format', 'Width px', 'Height px', 'Bytes', 'Settings', 'Artifacts', 'Transparency', 'Best use'];
+    const comparisonFormats = ['JPEG', 'PNG', 'GIF', 'WebP'];
+    const comparisonRowKeys = ['width', 'height', 'bytes', 'settings', 'artifacts', 'transparency', 'best'];
+    const comparisonPadding = 42;
+    const comparisonWidth = comparisonPadding * 2 + comparisonColumns.reduce((sum, width) => sum + width, 0);
+    const comparisonTableTop = 124, comparisonHeaderHeight = 62, comparisonRowHeight = 104;
+    comparisonCanvas.width = comparisonWidth;
+    comparisonCanvas.height = comparisonTableTop + comparisonHeaderHeight + comparisonRowHeight * comparisonFormats.length + 210;
+
+    function drawCellText(text, x, y, width, height, bold, color) {
+        const ctx = comparisonContext, padding = 12;
+        const maxWidth = width - padding * 2, maxLines = Math.max(1, Math.floor((height - padding * 2) / 25));
+        ctx.font = `${bold ? '700' : '400'} 19px system-ui, sans-serif`;
+        ctx.fillStyle = color;
+        ctx.textBaseline = 'top';
+        let lines = [], line = '';
+        for (const word of String(text || '—').split(/\s+/)) {
+            const candidate = line ? `${line} ${word}` : word;
+            if (line && ctx.measureText(candidate).width > maxWidth) { lines.push(line); line = word; }
+            else line = candidate;
+        }
+        if (line) lines.push(line);
+        if (lines.length > maxLines) { lines = lines.slice(0, maxLines); lines[maxLines - 1] = lines[maxLines - 1].replace(/[.…]*$/, '…'); }
+        lines.forEach((value, index) => ctx.fillText(value, x + padding, y + padding + index * 25, maxWidth));
+    }
+
+    function renderComparison() {
+        const ctx = comparisonContext, left = comparisonPadding;
+        ctx.fillStyle = '#ffffff'; ctx.fillRect(0, 0, comparisonCanvas.width, comparisonCanvas.height);
+        ctx.fillStyle = '#172b30'; ctx.font = '700 34px system-ui, sans-serif'; ctx.textBaseline = 'alphabetic';
+        ctx.fillText('Meme export comparison', left, 52);
+        ctx.fillStyle = '#53666b'; ctx.font = '18px system-ui, sans-serif';
+        ctx.fillText('Assignment 1 · Compare the same design exported in four formats', left, 86);
+        let y = comparisonTableTop;
+        let x = left;
+        comparisonHeaders.forEach((header, index) => {
+            ctx.fillStyle = '#173238'; ctx.fillRect(x, y, comparisonColumns[index], comparisonHeaderHeight);
+            drawCellText(header, x, y, comparisonColumns[index], comparisonHeaderHeight, true, '#ffffff');
+            x += comparisonColumns[index];
+        });
+        y += comparisonHeaderHeight;
+        comparisonFormats.forEach((format, rowIndex) => {
+            const row = comparisonFields.filter(field => field.dataset.memeField.startsWith(format.toLowerCase() + '-'));
+            const values = [format, ...comparisonRowKeys.map(key => row.find(field => field.dataset.memeField.endsWith('-' + key))?.value.trim() || '—')];
+            x = left;
+            values.forEach((value, columnIndex) => {
+                ctx.fillStyle = rowIndex % 2 ? '#f2f6f4' : '#ffffff';
+                ctx.fillRect(x, y, comparisonColumns[columnIndex], comparisonRowHeight);
+                drawCellText(value, x, y, comparisonColumns[columnIndex], comparisonRowHeight, columnIndex === 0, '#172b30');
+                x += comparisonColumns[columnIndex];
+            });
+            y += comparisonRowHeight;
+        });
+        const conclusion = el('meme-conclusion').value.trim() || '—';
+        ctx.fillStyle = '#e1f1e9'; ctx.fillRect(left, y + 24, comparisonWidth - left * 2, 146);
+        drawCellText(`Best format for my meme, and why: ${conclusion}`, left, y + 24, comparisonWidth - left * 2, 146, true, '#172b30');
+        ctx.strokeStyle = '#d9e1dd'; ctx.lineWidth = 1;
+        let gridY = comparisonTableTop;
+        for (let row = 0; row <= comparisonFormats.length + 1; row++) {
+            ctx.beginPath(); ctx.moveTo(left, gridY); ctx.lineTo(comparisonWidth - left, gridY); ctx.stroke();
+            gridY += row === 0 ? comparisonHeaderHeight : comparisonRowHeight;
+        }
+        let gridX = left;
+        comparisonColumns.forEach(width => { ctx.beginPath(); ctx.moveTo(gridX, comparisonTableTop); ctx.lineTo(gridX, y); ctx.stroke(); gridX += width; });
+        ctx.beginPath(); ctx.moveTo(gridX, comparisonTableTop); ctx.lineTo(gridX, y); ctx.stroke();
+    }
+
+    comparisonFields.forEach(field => field.addEventListener('input', renderComparison));
+    el('meme-conclusion').addEventListener('input', renderComparison);
+    el('download-meme-comparison').addEventListener('click', () => {
+        renderComparison();
+        comparisonCanvas.toBlob(blob => {
+            if (!blob) { el('meme-comparison-status').textContent = 'Could not create the PNG. Try again in another browser.'; return; }
+            const url = URL.createObjectURL(blob), link = document.createElement('a');
+            link.href = url; link.download = 'meme-format-comparison.png'; link.click();
+            URL.revokeObjectURL(url);
+            el('meme-comparison-status').textContent = 'PNG downloaded. Attach it with your four image exports.';
+        }, 'image/png');
+    });
+    renderComparison();
+}
+
 const samples = [["sample.png", 16149], ["sample.jpg", 18504], ["sample.gif", 27510], ["sample.webp", 7256]]; samples.forEach(([name, size]) => { let a = document.createElement("a"); a.className = "sample-card"; a.href = "assets/" + name; a.download = name; let im = document.createElement("img"); im.src = a.href; im.alt = "Same practice graphic encoded as " + name.split(".").pop(); let t = document.createElement("small"); t.textContent = name + " · " + size.toLocaleString() + " bytes"; a.append(im, t); el("image-samples").append(a) });
 el("high-meta").textContent = "High quality · 888,404 bytes · 640 × 360 · 30 fps · 6 s";
 el("low-meta").textContent = "Low quality · 107,224 bytes · 640 × 360 · 30 fps · 6 s";

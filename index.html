@@ -360,7 +360,8 @@
       </article>
       <div class="exercise"><strong>Studio · 55 min</strong>
         <p>Choose a subject, create your first meme and make at least two exports. Finish the comparison in Class 2. Use
-          <a download="" href="assets/meme-base.png">the supplied original graphic</a> if you need a starting image.</p>
+          <a download="" href="assets/meme-base.png">the supplied original graphic</a> if you need a starting image.
+        </p>
       </div>
       <div class="exit">
         <h3>Before leaving</h3>
@@ -512,10 +513,115 @@
           white-background JPEG over a colored layer.</p>
       </div>
       <div class="exercise"><strong>Studio · 55 min</strong>
-        <p>Complete <a href="#assignment-1">Assignment 1</a>. Compare the four exports, fill in the <a download=""
-            href="assets/image-comparison.csv">comparison worksheet</a>, and write your conclusion. Pair up and review
-          the legibility and file-size tradeoffs.</p>
+        <p>Complete <a href="#assignment-1">Assignment 1</a>. Compare the four exports, fill in the comparison form
+          below, download it as a PNG image, and write your conclusion. Pair up and review the legibility and file-size
+          tradeoffs.</p>
       </div>
+      <section aria-labelledby="meme-comparison-title" class="lab meme-comparison">
+        <h3 id="meme-comparison-title">Meme export comparison</h3>
+        <p>Enter the measured details for each export. When you’re done, download your completed comparison as a PNG
+          image.</p>
+        <form id="meme-comparison-form">
+          <div class="tablewrap">
+            <table class="comparison-form-table">
+              <thead>
+                <tr>
+                  <th scope="col">Format</th>
+                  <th scope="col">Width px</th>
+                  <th scope="col">Height px</th>
+                  <th scope="col">Bytes</th>
+                  <th scope="col">Settings</th>
+                  <th scope="col">Artifacts</th>
+                  <th scope="col">Transparency</th>
+                  <th scope="col">Best use</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">JPEG</th>
+                  <td><label class="sr-only" for="meme-jpeg-width">JPEG width in pixels</label><input
+                      id="meme-jpeg-width" data-meme-field="jpeg-width" placeholder="e.g. 1080" /></td>
+                  <td><label class="sr-only" for="meme-jpeg-height">JPEG height in pixels</label><input
+                      id="meme-jpeg-height" data-meme-field="jpeg-height" placeholder="e.g. 1080" /></td>
+                  <td><label class="sr-only" for="meme-jpeg-bytes">JPEG file size</label><input id="meme-jpeg-bytes"
+                      data-meme-field="jpeg-bytes" placeholder="e.g. 245 KB" /></td>
+                  <td><label class="sr-only" for="meme-jpeg-settings">JPEG export settings</label><input
+                      id="meme-jpeg-settings" data-meme-field="jpeg-settings" placeholder="Quality, profile…" /></td>
+                  <td><label class="sr-only" for="meme-jpeg-artifacts">JPEG visual artifacts</label><input
+                      id="meme-jpeg-artifacts" data-meme-field="jpeg-artifacts" placeholder="Banding, blur…" /></td>
+                  <td><label class="sr-only" for="meme-jpeg-transparency">JPEG transparency support</label><input
+                      id="meme-jpeg-transparency" data-meme-field="jpeg-transparency" placeholder="No" /></td>
+                  <td><label class="sr-only" for="meme-jpeg-best">JPEG best use</label><input id="meme-jpeg-best"
+                      data-meme-field="jpeg-best" placeholder="Photographs…" /></td>
+                </tr>
+                <tr>
+                  <th scope="row">PNG</th>
+                  <td><label class="sr-only" for="meme-png-width">PNG width in pixels</label><input id="meme-png-width"
+                      data-meme-field="png-width" placeholder="e.g. 1080" /></td>
+                  <td><label class="sr-only" for="meme-png-height">PNG height in pixels</label><input
+                      id="meme-png-height" data-meme-field="png-height" placeholder="e.g. 1080" /></td>
+                  <td><label class="sr-only" for="meme-png-bytes">PNG file size</label><input id="meme-png-bytes"
+                      data-meme-field="png-bytes" placeholder="e.g. 1.2 MB" /></td>
+                  <td><label class="sr-only" for="meme-png-settings">PNG export settings</label><input
+                      id="meme-png-settings" data-meme-field="png-settings" placeholder="Color mode, compression…" />
+                  </td>
+                  <td><label class="sr-only" for="meme-png-artifacts">PNG visual artifacts</label><input
+                      id="meme-png-artifacts" data-meme-field="png-artifacts" placeholder="Describe what you see…" />
+                  </td>
+                  <td><label class="sr-only" for="meme-png-transparency">PNG transparency support</label><input
+                      id="meme-png-transparency" data-meme-field="png-transparency" placeholder="Yes / partial alpha" />
+                  </td>
+                  <td><label class="sr-only" for="meme-png-best">PNG best use</label><input id="meme-png-best"
+                      data-meme-field="png-best" placeholder="Text, transparency…" /></td>
+                </tr>
+                <tr>
+                  <th scope="row">GIF</th>
+                  <td><label class="sr-only" for="meme-gif-width">GIF width in pixels</label><input id="meme-gif-width"
+                      data-meme-field="gif-width" placeholder="e.g. 1080" /></td>
+                  <td><label class="sr-only" for="meme-gif-height">GIF height in pixels</label><input
+                      id="meme-gif-height" data-meme-field="gif-height" placeholder="e.g. 1080" /></td>
+                  <td><label class="sr-only" for="meme-gif-bytes">GIF file size</label><input id="meme-gif-bytes"
+                      data-meme-field="gif-bytes" placeholder="e.g. 510 KB" /></td>
+                  <td><label class="sr-only" for="meme-gif-settings">GIF export settings</label><input
+                      id="meme-gif-settings" data-meme-field="gif-settings" placeholder="Palette, dithering…" /></td>
+                  <td><label class="sr-only" for="meme-gif-artifacts">GIF visual artifacts</label><input
+                      id="meme-gif-artifacts" data-meme-field="gif-artifacts" placeholder="Color banding…" /></td>
+                  <td><label class="sr-only" for="meme-gif-transparency">GIF transparency support</label><input
+                      id="meme-gif-transparency" data-meme-field="gif-transparency" placeholder="No / binary" /></td>
+                  <td><label class="sr-only" for="meme-gif-best">GIF best use</label><input id="meme-gif-best"
+                      data-meme-field="gif-best" placeholder="Simple animation…" /></td>
+                </tr>
+                <tr>
+                  <th scope="row">WebP</th>
+                  <td><label class="sr-only" for="meme-webp-width">WebP width in pixels</label><input
+                      id="meme-webp-width" data-meme-field="webp-width" placeholder="e.g. 1080" /></td>
+                  <td><label class="sr-only" for="meme-webp-height">WebP height in pixels</label><input
+                      id="meme-webp-height" data-meme-field="webp-height" placeholder="e.g. 1080" /></td>
+                  <td><label class="sr-only" for="meme-webp-bytes">WebP file size</label><input id="meme-webp-bytes"
+                      data-meme-field="webp-bytes" placeholder="e.g. 96 KB" /></td>
+                  <td><label class="sr-only" for="meme-webp-settings">WebP export settings</label><input
+                      id="meme-webp-settings" data-meme-field="webp-settings" placeholder="Quality, lossy/lossless…" />
+                  </td>
+                  <td><label class="sr-only" for="meme-webp-artifacts">WebP visual artifacts</label><input
+                      id="meme-webp-artifacts" data-meme-field="webp-artifacts" placeholder="Describe what you see…" />
+                  </td>
+                  <td><label class="sr-only" for="meme-webp-transparency">WebP transparency support</label><input
+                      id="meme-webp-transparency" data-meme-field="webp-transparency" placeholder="Yes / alpha" /></td>
+                  <td><label class="sr-only" for="meme-webp-best">WebP best use</label><input id="meme-webp-best"
+                      data-meme-field="webp-best" placeholder="General web delivery…" /></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <label class="conclusion-label" for="meme-conclusion">Best format for my meme, and why</label>
+          <textarea id="meme-conclusion" rows="3"
+            placeholder="Explain your choice using image quality, file size, transparency, and intended use."></textarea>
+          <div class="comparison-export-actions"><button id="download-meme-comparison" type="button">Download comparison
+              as PNG</button><span aria-live="polite" id="meme-comparison-status"></span></div>
+        </form>
+        <canvas aria-label="Preview of the comparison image that will be downloaded" class="comparison-image-preview"
+          id="meme-comparison-preview" role="img"></canvas>
+      </section>
       <div class="exit">
         <h3>Before leaving</h3>
         <p>Save your files, record what you learned, and identify one improvement to make before the next class.</p>
@@ -1683,8 +1789,8 @@
               <td>Original starter graphic</td>
             </tr>
             <tr>
-              <td><a download="" href="assets/image-comparison.csv">image-comparison.csv</a></td>
-              <td>Assignment 1 export measurements</td>
+              <td><a href="#class-2">Assignment 1 comparison form</a></td>
+              <td>Record export measurements in the browser and download the completed form as a PNG image</td>
             </tr>
             <tr>
               <td><a download="" href="assets/prompt-log.csv">prompt-log.csv</a></td>
